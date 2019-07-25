@@ -1,3 +1,4 @@
+// smooth scroll
 $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
@@ -24,12 +25,15 @@ $(document).ready(function(){
   });
 
 
-
-
+// goto top on name click
 $("a[href='#top']").click(function() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
 });
 
 
-
+// collapse navbar on item click (phone view)
+$('.nav>li>a').on('click', function(){
+    console.log
+    $('.navbar-collapse').removeClass('show');
+});
