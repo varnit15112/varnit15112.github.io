@@ -31,20 +31,15 @@ $("a[href='#top']").click(function() {
   return false;
 });
 
-$("a[href='#aboutScroll']").click(function() {
-  $("html, body").animate({ scrollTop: 0 }, "slow");
-  return false;
-});
-
 
 // collapse navbar on item click (phone view)
 $('.nav>li>a').on('click', function(){
-    console.log
     $('.navbar-collapse').removeClass('show');
 });
 
+
 $(document).ready(function() {
-  $('a[href^="#"]').click(function() {
+  $('a[href="#about"]').click(function() {
       var target = $(this.hash);
       if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
       if (target.length == 0) target = $('html');
@@ -52,3 +47,29 @@ $(document).ready(function() {
       return false;
   });
 });
+
+// document.getElementById('aboutFocus').focus();
+
+
+$(document).ready(function() {
+  $('a[href="#projects"]').click(function() {
+      var target = $(this.hash);
+      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+      if (target.length == 0) target = $('html');
+      $('html, body').animate({ scrollTop: target.offset().top+50 }, 1000);
+      return false;
+  });
+});
+
+
+
+$(document).ready(function() {
+  $('a[href="#contact"]').click(function() {
+      var target = $(this.hash);
+      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+      if (target.length == 0) target = $('html');
+      $('html, body').animate({ scrollTop: target.offset().top-100 }, 1000);
+      return false;
+  });
+});
+
