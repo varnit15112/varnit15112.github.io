@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Varnit Jain | Blog</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/countdownStyle.css">
+
+	<!-- Chevron -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body bgcolor="#afafaf" data-spy="scroll" data-target="#navbarNav">
+
+	<!-- <section id="about"></section> -->
+	<section id="blog"></section>
+
+	<nav class="navbar navbar-expand-lg navbar-light navbar-custom bg-white fixed-top">
+
+		<a class="navbar-brand" href="#top"><font color="#505050" family="Roboto">Varnit Jain</font></a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+
+		<div class="collapse navbar-collapse flex-grow-1 text-right " id="navbarNav">
+			<ul class="nav navbar-nav ml-auto flex-nowra">
+				<li class="nav-item"><a class="nav-link px-3 cool-link" href="../index.html#about" id="aboutColor">ABOUT</a></li>
+				<li class="nav-item"><a class="nav-link px-3  cool-link" href="../index.html#projects">PROJECTS</a></li>
+				<li class="nav-item"><a class="nav-link px-3  cool-link" href="../index.html#contact">CONTACT</a></li>
+				<li class="nav-item"><a class="nav-link px-3  cool-link" href="#blog">BLOG</a></li>
+			</ul>
+		</div>
+
+	</nav>
+
+
+
+
+	<main class="main">
+
+
+		<div class="jumbotron">
+			<div class="container">
+				<p align="center">Coming Soon</p>
+
+				<h1 align="center" id="demo" class="countdown"></h1>
+				
+			</div>
+
+
+		</div>
+
+
+
+
+	</main>
+
+
+
+
+	<!-- <hr width="90%"/> -->
+
+	<footer class="footer-basic-centered foot-shadow" id="contact">
+
+		<p class="footer-company-motto">The company motto.</p>
+
+		<p class="footer-links">
+			<a href="#">Home</a>
+			·
+			<a href="#">Blog</a>
+			·
+			<a href="#">Pricing</a>
+			·
+			<a href="#">About</a>
+			·
+			<a href="#">Faq</a>
+			·
+			<a href="#">Contact</a>
+		</p>
+
+		<p class="footer-company-name">Company Name &copy; 2015</p>
+
+	</footer>
+
+
+
+	<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("Aug 31, 2019 00:00:00").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	  // Get today's date and time
+	  var now = new Date().getTime();
+
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	  // Display the result in the element with id="demo"
+	  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+	  + minutes + "m " + seconds + "s ";
+
+	  // If the count down is finished, write some text 
+	  if (distance < 0) {
+	  	clearInterval(x);
+	  	document.getElementById("demo").innerHTML = "EXPIRED";
+	  }
+	}, 1000);
+</script>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="../js/myScript.js"></script>
+<script src="../js/countdownScript.js"></script>
+
+
+
+</body>
+
+</html>
