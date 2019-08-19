@@ -224,32 +224,28 @@ p {
 }
 
 
-.image-footer {
-	width: 4%;
-	padding:0px;
+.bottom-icon-parent{
+	margin: auto;
+	width: 50%;
+	text-align: center;
+}
+
+svg{
+	fill: #AC3B61;
+	margin:  10px;
+	margin-top: 40px;
+}
+
+.img-footer:hover svg g g{
+	fill: #AC3B61;
+	stroke: #AC3B61;
+	padding: 20px;
 	margin: 10px;
-	margin-top: : 20px;
+}  
+.img-footer:hover svg g text{
+	fill: #AC3B61;
+	stroke: #AC3B61;
+	padding: 20px;
+	margin: 10px;
+}  
 
-}
-
-
-.footer-icons {
-	padding:10px;
-	padding-top: 50px;
-}
-
-/*
-
-.image_off, #home:hover .image_on{
-	display:none
-	margin-left: auto;
-	margin-right: auto;
-}
-.image_on, #home:hover .image_off{
-	display:block
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-*/
