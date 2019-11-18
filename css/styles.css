@@ -250,14 +250,15 @@ p {
 }
 
 svg{
-	fill: #AC3B61;
+	fill: #999;
 	margin:  10px;
 	margin-top: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
-.img-footer:hover svg g g{
+.img-footer:hover svg path{
 	fill: #AC3B61;
-	stroke: #AC3B61;
 	padding: 20px;
 	margin: 10px;
 }  
