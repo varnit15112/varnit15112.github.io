@@ -178,7 +178,7 @@
 			</div>
 
 
-			<div class="jumbotron singPage"  id="concepts-tag">
+			<div class="jumbotron singPage"  id="concept-tag">
 				<div class="container">
 					<p class="sectionHeading"><strong>CONCEPTS</strong></p>
 
@@ -380,77 +380,38 @@
 
 
 
-			<script>
+
+
+<script>
 	// Set the date we're counting down to
 	$(document).on('scroll', function() {
-		if($(this).scrollTop()>=$('#overview-tag').position().top && $(this).scrollTop()<=$('#research-tag').position().top){
-			console.log("Overview");
-			$( "#overview-color" ).css( "color", "rgba(0,0,0,0.7)");
 
-			$( "#research-color" ).css( "color", "rgba(0,0,0,0.3)");
-			$( "#research-color").append('<style>#research-color::before{background-color: rgba(0,0,0,0.3);}</style>');
-
-			$( "#concept-color" ).css( "color", "rgba(0,0,0,0.3)");
-			$( "#solution-color" ).css( "color", "rgba(0,0,0,0.3)");
-			$( "#testing-color" ).css( "color", "rgba(0,0,0,0.3)");
-		}
+		var allTag = ['#overview-tag', '#research-tag', '#concept-tag', '#solution-tag', '#testing-tag' ]
+		var allCol = ['#overview-color', '#research-color', '#concept-color', '#solution-color', '#testing-color' ]
 		
-		else if($(this).scrollTop()>=$('#research-tag').position().top && $(this).scrollTop()<=$('#concepts-tag').position().top){
-			console.log("Research");
-			$( "#overview-color" ).css( "color", "rgba(0,0,0,0.7)");
+		var l;
+		var flag=0;
 
-			$( "#research-color" ).css( "color", "rgba(0,0,0,0.7)");
-			$( "#research-color").append('<style>#research-color::before{background-color: rgba(0,0,0,0.7);}</style>');
+		for ( var i = 0, l = allTag.length; i < l; i++ ) {
 
-			$( "#concept-color" ).css( "color", "rgba(0,0,0,0.3)");
-			$( "#solution-color" ).css( "color", "rgba(0,0,0,0.3)");
-			$( "#testing-color" ).css( "color", "rgba(0,0,0,0.3)");
-		}
+			console.log(allTag[i]);
+			console.log(allTag[i+1]);
 
-		else if($(this).scrollTop()>=$('#concepts-tag').position().top && $(this).scrollTop()<=$('#solution-tag').position().top){
-			console.log("Concepts");
-			$( "#overview-color" ).css( "color", "rgba(0,0,0,0.7)");
+			if (flag==0){
+				$( allCol[i] ).css( "color", "rgba(0,0,0,0.7)");
+				// $( allCol[i]).append('<style>#research-color::before{background-color: rgba(0,0,0,0.7);}</style>');
+			}
 
-			$( "#research-color" ).css( "color", "rgba(0,0,0,0.7)");
-			$( "#research-color").append('<style>#research-color::before{background-color: rgba(0,0,0,0.7);}</style>');
+			if($(this).scrollTop()>=$(allTag[i]).position().top && $(this).scrollTop()<=$(allTag[i+1]).position().top){
+				$( allCol[i] ).css( "color", "rgba(0,0,0,0.7)");
+				// $( allCol[i]).append('<style>#research-color::before{background-color: rgba(0,0,0,0.7);}</style>');
+				flag=1;
+			}else if (flag==1){
+				$( allCol[i] ).css( "color", "rgba(0,0,0,0.3)");
+				// $( allCol[i]).append('<style>#research-color::before{background-color: rgba(0,0,0,0.3);}</style>');
+			}
 
-			$( "#concept-color" ).css( "color", "rgba(0,0,0,0.7)");
-			$( "#research-color").append('<style>#concept-color::before{background-color: rgba(0,0,0,0.7);}</style>');
 
-			$( "#solution-color" ).css( "color", "rgba(0,0,0,0.3)");
-			$( "#testing-color" ).css( "color", "rgba(0,0,0,0.3)");
-		}
-
-		else if($(this).scrollTop()>=$('#solution-tag').position().top && $(this).scrollTop()<=$('#testing-tag').position().top){
-			console.log("Solution");
-			$( "#overview-color" ).css( "color", "rgba(0,0,0,0.7)");
-
-			$( "#research-color" ).css( "color", "rgba(0,0,0,0.7)");
-			$( "#research-color").append('<style>#research-color::before{background-color: rgba(0,0,0,0.7);}</style>');
-
-			$( "#concept-color" ).css( "color", "rgba(0,0,0,0.7)");
-			$( "#research-color").append('<style>#concept-color::before{background-color: rgba(0,0,0,0.7);}</style>');
-
-			$( "#solution-color" ).css( "color", "rgba(0,0,0,0.7)");
-			$( "#research-color").append('<style>#solution-color::before{background-color: rgba(0,0,0,0.7);}</style>');
-			$( "#testing-color" ).css( "color", "rgba(0,0,0,0.3)");
-
-		}
-
-		else if($(this).scrollTop()>=$('#testing-tag').position().top){
-			console.log("Testing");
-			$( "#overview-color" ).css( "color", "rgba(0,0,0,0.7)");
-
-			$( "#research-color" ).css( "color", "rgba(0,0,0,0.7)");
-			$( "#research-color").append('<style>#research-color::before{background-color: rgba(0,0,0,0.7);}</style>');
-
-			$( "#concept-color" ).css( "color", "rgba(0,0,0,0.7)");
-			$( "#research-color").append('<style>#concept-color::before{background-color: rgba(0,0,0,0.7);}</style>');
-
-			$( "#solution-color" ).css( "color", "rgba(0,0,0,0.7)");
-			$( "#research-color").append('<style>#solution-color::before{background-color: rgba(0,0,0,0.7);}</style>');
-			$( "#testing-color" ).css( "color", "rgba(0,0,0,0.7)");
-			$( "#research-color").append('<style>#testing-color::before{background-color: rgba(0,0,0,0.7);}</style>');
 		}
 	})
 
