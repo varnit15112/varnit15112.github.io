@@ -316,6 +316,7 @@ body {
 
 .topImg{
 	padding: 50px;
+	border-radius: 5px;
 }
 
 
@@ -426,5 +427,26 @@ body {
 
 hr{
 	color: #AC3B61;
+}
+
+
+a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.contentText3{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
