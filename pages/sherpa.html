@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="htmlScroll">
 <head>
 	<title>Sherpa | Varnit </title>
 	<meta charset="utf-8">
@@ -371,9 +371,9 @@
 			<div class="footer">
 
 				<ul>
-					<li id="overview-color">Overview</li>
-					<li id="research-color">Research</li>
-					<li id="concept-color">Concepts</li>
+					<li id="overview-color" onclick="location='#overview-tag' ">Overview</a></li>
+					<li id="research-color" onclick="location='#research-tag' ">Research</li>
+					<li id="concept-color" onclick="location='#concept-tag' ">Concepts</li>
 					<li id="solution-color">Solution</li>
 					<li id="testing-color">Testing</li>
 				</ul>
@@ -383,8 +383,23 @@
 
 
 
+	<script>
 
-<script>
+
+	$(function() {
+		// var h1Height = $('h1').height();
+		$('li').click(function (e) {
+			e.preventDefault();
+			var target = $(this.hash);
+			$('html, body').animate({
+				scrollTop: target.offset().top - 200 
+			}, 1000);
+			return false;
+		});
+	});
+
+
+
 	// Set the date we're counting down to
 	$(document).on('scroll', function() {
 
@@ -416,6 +431,10 @@
 
 		}
 	})
+
+
+
+
 
 </script>
 
