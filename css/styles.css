@@ -308,13 +308,13 @@ body {
 /*INDIVIDUAL PAGES STYLING*/
 
 .pagesHeading{
-	font-family: Montserrat;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 45px;
 }
 
 .pagesContent{
-	font-family: Montserrat;
+	font-family: 'IBM Plex Sans', sans-serif;;
 	font-size: 20px;
 }
 
@@ -323,19 +323,25 @@ body {
 	border-radius: 5px;
 }
 
+img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 .contentText{
-	font-family: Montserrat;
+	font-family: 'IBM Plex Sans', sans-serif;;
 	font-size: 15px;
 	padding: 50px;
 }
 
 .contentTextDown{
-	font-family: Montserrat;
+	font-family: 'IBM Plex Sans', sans-serif;;
 	font-size: 15px;
 }
 .contentText2{
-	font-family: Montserrat;
+	font-family: 'IBM Plex Sans', sans-serif;;
 	font-size: 15px;
 	padding: 10;
 	margin: 0;
@@ -352,7 +358,7 @@ body {
 }
 
 .sectionHeading{
-	font-family: Montserrat;
+	font-family: 'Lato', sans-serif;
 	font-size: 30px;
 }
 
@@ -376,7 +382,7 @@ body {
 .footer ul{
 	display: flex;
 	list-style-type: none;
-	font-family: Montserrat;
+	font-family: 'IBM Plex Sans', sans-serif;;
 	font-size: 15px;
 	margin: 5px;
 
@@ -456,3 +462,26 @@ hr{
 .singPage{
 	margin-top: 00px;
 }
+
+.topHeading {
+	font-weight: bold;
+}
+
+.extra { 
+  visibility: hidden;
+  width: 100px;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+  left: 7%;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+em:hover .extra {
+    visibility: visible;
+}
+
+
