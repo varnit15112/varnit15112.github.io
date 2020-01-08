@@ -507,9 +507,9 @@ em:hover .extra {
 	position: relative;
 }
 
-.imageBottom {
+/*.imageBottom {
   position: relative;
-}
+}*/
 
 .imageTop {
   width: 30px;
@@ -525,4 +525,70 @@ em:hover .extra {
 .uistImg{
 	width:50px;
 }
+
+
+.image-container a img {
+	max-width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: opacity 0.5s ease;
+}
+
+.nothidden:hover {
+    opacity: 0;
+}
+
+
+
+/*
+.image-container {
+  
+
+  background: url('../covers/mime.png') center center no-repeat;
+  background-size: contain;
+
+  width: match-parent;
+  height: 200px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.image-container:hover {
+  background-image: url('../covers/mime2.png');
+}*/
+
+/*
+
+.transition img:first-child{
+	top: 0;
+	left: 0;
+	opacity: 1;
+
+}
+
+.transition img:last-child{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.transition:hover img:last-child{
+	opacity: 1;
+}
+
+.transition:hover img:first-child{
+	opacity: 0;
+}*/
+
+
+
+
+
+
+
+
 
