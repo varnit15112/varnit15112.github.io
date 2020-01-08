@@ -491,7 +491,7 @@ em:hover .extra {
 }
 
 
-.classForHeadingImages img{
+.imageBottom{
 	max-width: 100%;
 	box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
@@ -504,10 +504,23 @@ em:hover .extra {
 
 .imageCover{
 	padding: 50px;
+	position: relative;
 }
 
+.imageBottom {
+  position: relative;
+}
 
+.imageTop {
+  width: 30px;
+  position: absolute;
+  right: 9%;
+  top: 14%;
+}
 
+.chiImg{
+	width: 60px;
+}
 
 
 
