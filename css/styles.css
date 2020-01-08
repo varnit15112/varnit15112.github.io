@@ -379,14 +379,15 @@ img{
 
 }
 
+
 .footer ul{
 	display: flex;
 	list-style-type: none;
 	font-family: 'IBM Plex Sans', sans-serif;;
 	font-size: 15px;
 	margin: 5px;
-
 }
+
 
 .footer ul li{
 	padding-top: 5px;
@@ -488,5 +489,25 @@ hr{
 em:hover .extra {
     visibility: visible;
 }
+
+
+.classForHeadingImages img{
+	max-width: 100%;
+	box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.sideSpacing{
+	padding-left: 150px;
+	padding-right: 150px;
+
+}
+
+.imageCover{
+	padding: 50px;
+}
+
+
+
+
 
 
