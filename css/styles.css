@@ -561,22 +561,12 @@ em:hover .extra {
 }
 
 
-
 .sherpaColor{
 	color: #bd7c01;
 }
-.sherpaColor2{
-	color: #bd7c01;
+span.sherpaColor{
+	color: #a06900;
 }
-
-
-/*mark{
-
-	background-color: rgba(237, 176, 60, 100);
-	display: inline-block;
-  	line-height: 0em;
-  	padding-bottom: 0.5em;
-}*/
 
 .unavColor{
 	color: #006D57;
