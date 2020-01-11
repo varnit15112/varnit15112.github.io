@@ -28,11 +28,9 @@ body {
 		padding-bottom: 10px;}
 	}
 
-
 	.navbar-light > a > font {
 		padding-left: 2em;
 		font-family: 'Roboto', sans-serif;
-
 	}
 
 	.navbar-light .nav-item.active .nav-link,
@@ -469,9 +467,9 @@ hr{
 	margin-top: 00px;
 }
 
-.topHeading {
+/*.topHeading unavColor {
 	font-weight: bold;
-}
+}*/
 
 .extra { 
   visibility: hidden;
@@ -564,6 +562,23 @@ em:hover .extra {
 
 
 
+.sherpaColor{
+	color: #bd7c01;
+}
+.sherpaColor2{
+	color: #bd7c01;
+}
 
 
+/*mark{
+
+	background-color: rgba(237, 176, 60, 100);
+	display: inline-block;
+  	line-height: 0em;
+  	padding-bottom: 0.5em;
+}*/
+
+.unavColor{
+	color: #006D57;
+}
 
