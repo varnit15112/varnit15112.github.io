@@ -54,8 +54,8 @@
 		<div class="collapse navbar-collapse flex-grow-1 text-right " id="navbarNav">
 			<ul class="nav navbar-nav ml-auto flex-nowra">
 				<li class="nav-item"><a class="nav-link px-3 cool-link" href="../index.html#about" id="aboutColor">ABOUT</a></li>
-				<li class="nav-item"><a class="nav-link px-3  cool-link" href="../index.html#projects">PROJECTS</a></li>
-				<li class="nav-item"><a class="nav-link px-3  cool-link" href="../index.html#contact">CONTACT</a></li>
+				<li class="nav-item"><a class="nav-link px-3 cool-link" href="../index.html#projects">PROJECTS</a></li>
+				<li class="nav-item"><a class="nav-link px-3 cool-link" href="../index.html#contact">CONTACT</a></li>
 				<!-- 				<li class="nav-item"><a class="nav-link px-3  cool-link" href="#blog">BLOG</a></li> -->
 			</ul>
 		</div>
@@ -728,20 +728,6 @@
 
 
 <script>
-
-
-	$(function() {
-		// var h1Height = $('h1').height();
-		$('li').click(function (e) {
-			e.preventDefault();
-			var target = $(this.hash);
-			$('html, body').animate({
-				scrollTop: target.offset().top - 200 
-			}, 1000);
-			return false;
-		});
-	});
-
 
 	// Set the date we're counting down to
 	$(document).on('scroll', function() {

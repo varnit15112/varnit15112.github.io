@@ -457,18 +457,6 @@
 	<script>
 
 
-	$(function() {
-		// var h1Height = $('h1').height();
-		$('li').click(function (e) {
-			e.preventDefault();
-			var target = $(this.hash);
-			$('html, body').animate({
-				scrollTop: target.offset().top - 200 
-			}, 1000);
-			return false;
-		});
-	});
-
 
 
 	// Set the date we're counting down to
