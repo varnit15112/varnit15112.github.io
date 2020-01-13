@@ -572,3 +572,39 @@ span.sherpaColor{
 	color: #006D57;
 }
 
+.mimeColor{
+	color: #DE7741;
+}
+
+.virtualColor{
+	color: #222C7C;
+}
+
+.jamooraColor{
+	color: #29769D;
+}
+
+.beatColor{
+	color: #BB3C41;
+}
+
+
+
+.imageRow{
+	display: flex;
+}
+
+.imageRow2{
+	flex-shrink: 0;
+	border: 1px solid rgba(0,0,0,.2);
+	box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+
+
+
+
+
+
+
+

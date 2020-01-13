@@ -78,8 +78,10 @@ s
 
 			<p class="contentTextDown">
 
-					‍<br><strong  class="topHeading unavColor">Abstract</strong></br>
+					‍<br><strong  class="topHeading virtualColor">Abstract</strong></br>
 					Often Virtual Reality (VR) experiences are limited by the design of standard controllers. This work aims to liberate a VR developer from these limitations in the physical realm to provide an expressive match to the limitless possibilities in the virtual realm. VirtualBricks is a LEGO based toolkit that enables construction of a variety of physical-manipulation enabled controllers for VR, by ofering a set of feature bricks that emulate as well as extend the capabilities of default controllers. Based on the LEGO platform, the toolkit provides a modular, scalable solution for enabling passive haptics in VR.  <br><br>
+					<strong>Published in The ACM CHI Conference on Human Factors in Computing Systems 2019. </strong>
+					<br>
 
 				</p>
 
@@ -93,12 +95,12 @@ s
 
 					
 
-				<strong  class="topHeading unavColor">Role</strong></br>
+				<strong  class="topHeading virtualColor">Role</strong></br>
 				I designed and developed the Virtual Reality Applications to test the experience of various use cases. I was also responsible for creating a custom Unity package that enabled developed to integrate VR Apps with our hardware. I created a channel of communication between the custom hardware and unity so that we could receive sensors data without lag.
 				<br><br>
 
 
-				<strong  class="topHeading unavColor">Team</strong></br>
+				<strong  class="topHeading virtualColor">Team</strong></br>
 				Jatin Arora,
 				Varnit Jain,
 				Nirmita Mehra,
@@ -107,15 +109,15 @@ s
 				Shwetank Shrey
 			</br></br>
 
-			<strong  class="topHeading unavColor">Timeline</strong></br> May 2018 - Sept 2018</br></br>
+			<strong  class="topHeading virtualColor">Timeline</strong></br> May 2018 - Sept 2018</br></br>
 
-			<strong  class="topHeading unavColor">DOI</strong></br> 
+			<strong  class="topHeading virtualColor">DOI</strong></br> 
 			<a href="https://dl.acm.org/citation.cfm?id=3300286
 			" target="_blank">
 			https://dl.acm.org/citation.cfm?id=3300286
 			</a></br></br>
 
-			<strong  class="topHeading unavColor">Full Paper</strong></br> 
+			<strong  class="topHeading virtualColor">Full Paper</strong></br> 
 			<a href="virtual-paper056.pdf
 			" target="_blank">
 			Download Link
@@ -232,6 +234,23 @@ s
 
 
 
+	<div class="jumbotron singPage"  id="feat-tag">
+		<div class="container pagesContent">
+			<p class="sectionHeading"><strong>FEATURE BRICKS</strong></p><br>
+
+
+			<img src="virtual-all.jpg" class="middleImg" width="100%"><br><br>
+
+
+			<br><br>
+
+			<hr width="100%">
+
+		</div>
+
+	</div>
+
+
 <div class="jumbotron singPage"  id="sys-tag">
 	<div class="container pagesContent">
 		<p class="sectionHeading"><strong>SYSTEM DESIGN</strong></p><br>
@@ -246,23 +265,6 @@ s
 
 	</div>
 
-
-
-	<div class="jumbotron singPage"  id="feat-tag">
-		<div class="container pagesContent">
-			<p class="sectionHeading"><strong>FEATURE BRICKS</strong></p><br>
-
-
-			<img src="virtual-all.jpg" class="middleImg" width="80%"><br><br>
-
-
-			<br><br>
-
-			<hr width="100%">
-
-		</div>
-
-	</div>
 
 
 
@@ -294,12 +296,12 @@ s
 <div class="footer">
 
 	<ul>
-		<li id="overview-color">Overview</li>
-		<li id="demo-color">Demonstration</li>
-		<li id="app-color">Applications</li>
-		<li id="sys-color">System Design</li>
-		<li id="feat-color">Feature Bricks</li>
-		<li id="info-color">Information Flow</li>
+		<li id="overview-color" onclick="location='#overview-tag' ">Overview</li>
+		<li id="demo-color" onclick="location='#demo-tag' ">Demonstration</li>
+		<li id="app-color" onclick="location='#app-tag' ">Applications</li>
+		<li id="feat-color" onclick="location='#feat-tag' ">Feature Bricks</li>
+		<li id="sys-color" onclick="location='#sys-tag' ">System Design</li>
+		<li id="info-color" onclick="location='#info-tag' ">Information Flow</li>
 	</ul>
 
 </div>
@@ -312,8 +314,8 @@ s
 	// Set the date we're counting down to
 	$(document).on('scroll', function() {
 
-		var allTag = ['#overview-tag', '#demo-tag', '#app-tag', '#sys-tag', '#feat-tag', '#info-tag' ]
-		var allCol = ['#overview-color', '#demo-color', '#app-color', '#sys-color', '#feat-color', '#info-color' ]
+		var allTag = ['#overview-tag', '#demo-tag', '#app-tag', '#feat-tag',  '#sys-tag', '#info-tag' ]
+		var allCol = ['#overview-color', '#demo-color', '#app-color', '#feat-color', '#sys-color', '#info-color' ]
 		
 		var l;
 		var flag=0;
