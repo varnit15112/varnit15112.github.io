@@ -248,6 +248,10 @@ body {
 		text-decoration: none;
 	}  
 
+.footer ul li{
+	cursor:pointer;
+}
+
 
 /* Card Hover Dynamics
 */
@@ -606,6 +610,7 @@ span.sherpaColor{
 
 
 .numberOfUsers{
+	line-height: 1;
 	font-weight: 300;
 	text-align: center;
 	font-size: 50px;
@@ -674,9 +679,28 @@ span.sherpaColor{
 	box-shadow: 0 0 10px rgba(0,0,0,.4);
 }
 
+/*.swiper-slide > img:hover {
+	max-width: 200%
+
+}*/
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+	pointer-events: auto;
+	/*opacity: 1;*/
+	cursor:pointer;
+}
 
 
+.ss1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+.ss2{
+	font-size: 100px;
+	font-weight: 600;
+}
 
 
 
