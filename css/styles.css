@@ -722,7 +722,13 @@ span.sherpaColor{
 	color: #888;
 }
 
+.fillBottom{
+	height: 100px;
+	background-color: #fff;
+}
 
-
-
+.contentTextMore{
+	font-family: 'IBM Plex Sans', sans-serif;;
+	font-size: 20px;
+}
 
