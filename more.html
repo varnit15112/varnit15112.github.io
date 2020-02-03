@@ -62,7 +62,7 @@
 		<div class="jumbotron">
 			<div class="sideSpacing">
 				<!-- <h1 class="display-4">Hi</h1> -->
-				<h1>More about me!  &nbsp;  <span id="changeText">@_@</span></h1>
+				<h1 class="funHeading">More about me!  &nbsp;  <span id="changeText">@_@</span></h1>
 				
 
 				<!-- I am looking for an internship for summer 2020 that will challenge me to solve everyday problems using creative solutions while enabling me to contribute, learn, and grow.  -->
@@ -453,7 +453,7 @@
 		// var text = ["@_@", "Hi", "Sup dude"];
 		var counter = 0;
 		var elem = document.getElementById("changeText");
-		var inst = setInterval(change, 10000);
+		var inst = setInterval(change, 3500);
 
 		function change() {
 			console.log("hahaha");
@@ -461,7 +461,7 @@
 		  console.log("hahaha2");
 		  counter=0;
 
-		  sleep(300).then(() => {
+		  sleep(100).then(() => {
 		    //do stuff
 		    elem.innerHTML = "@_@";
 		  	console.log("hahaha3");

@@ -318,6 +318,7 @@ body {
 .pagesContent{
 	font-family: 'IBM Plex Sans', sans-serif;;
 	font-size: 20px;
+	margin: auto;
 }
 
 .topImg{
