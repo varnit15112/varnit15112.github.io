@@ -5,7 +5,7 @@
 
 body {
 	position: relative;
-	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
 
 }
 
@@ -731,4 +731,45 @@ span.sherpaColor{
 	font-family: 'IBM Plex Sans', sans-serif;;
 	font-size: 20px;
 }
+
+.nibbleClass{
+	margin-bottom: 50px;
+	border-radius: 10px;
+	padding: 40px;
+	border: 2px solid rgba(172,59,97,0.5);
+}
+
+.nibbleImage{
+	border-radius: 25px;
+	max-width: 100%;
+	border: 2px solid rgba(172,59,97,0.5);
+}
+
+.nibbleHeading{
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
+	font-size: 40px;
+	color: rgba(0,0,0,0.7);
+}
+
+.nibbleText{
+	font-family: 'IBM Plex Sans', sans-serif;;
+	font-size: 15px;
+}
+
+
+.funHeading{
+	color: #AC3B61;
+}
+
+
+
+
+
+
+
+
+
+
 
