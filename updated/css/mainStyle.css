@@ -1,0 +1,227 @@
+/*:root {
+    --space-unit: 1em;
+    --space-xxs:  calc(0.25 * var(--space-unit));
+    --space-xs:   calc(0.5 * var(--space-unit));
+    --space-sm:   calc(0.75 * var(--space-unit));
+    --space-md:   calc(1.25 * var(--space-unit));
+    --space-lg:   calc(2 * var(--space-unit));
+    --space-xl:   calc(3.25 * var(--space-unit));
+    --space-xxl:  calc(5.25 * var(--space-unit));
+}*/
+:root {
+  --color1: #fc0;
+	--color2: #f36;
+	--color3: #09f;
+	--color4: #f90;
+	--color5: #85f;
+	--color6: #0fa;
+
+	--color-background: #181818;
+  --color-white: #ffffff;
+  --color-dark: #555555;
+
+  --color-white-transparent: #ffffff80;
+}
+
+
+
+body{
+	background-color: var(--color-background);
+}
+
+a, a:hover, a:active, a:visited {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+
+.helloSection{
+	padding-top: 5em;
+	padding-bottom: 10em;
+}
+
+.helloText{
+  font-family: Mosk800;
+	font-size: 4.5em;
+	color: var(--color-white);
+}
+
+.categoriesSection{
+  margin-bottom: 5em;
+}
+
+.categoryButton{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-radius: 20px;
+  border: 1px solid var(--color-dark);
+}
+
+
+/* .selectedCategoryButton{
+  background-image:
+    linear-gradient(
+      to bottom,
+      var(--color1) 17%,
+      var(--color2) 17% 34%,
+      var(--color3) 34% 51%,
+      var(--color4) 51% 68%,
+      var(--color5) 68% 85%,
+      var(--color6) 85%
+    );
+} */
+.selectedCategoryButton{
+  background-image:
+    linear-gradient(
+      135deg,
+      var(--color1) 17%,
+      var(--color2) 17% 34%,
+      var(--color3) 34% 51%,
+      var(--color4) 51% 68%,
+      var(--color5) 68% 85%,
+      var(--color6) 85%
+    );
+}
+/*
+.selectedCategoryButton{
+  border-image: conic-gradient(
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color4),
+    var(--color5),
+    var(--color6)) 1;
+
+}
+ */
+
+ .projectCard{
+   margin-bottom: 5em;
+   border-radius: 10px;
+ 	/* height: 300px; */
+ }
+
+.project1{
+	border: 5px solid var(--color1);
+}
+.project2{
+	border: 5px solid var(--color2);
+}
+.project3{
+	border: 5px solid var(--color3); /*#0c8;*/
+}
+.project4{
+	border: 5px solid var(--color4);
+}
+.project5{
+	border: 5px solid var(--color5);
+}
+.project6{
+	border: 5px solid var(--color6);
+}
+
+
+.cardImageMain{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project1Image{
+  width: 80%;
+  padding: 1em;
+}
+.project2Image{
+  width: 80%;
+  padding: 3em;
+}
+.project3Image{
+  width: 70%;
+  padding: 2em;
+}
+.project4Image{
+  width: 80%;
+  padding: 3em;
+}
+.project5Image{
+  width: 80%;
+  padding: 3em;
+}
+.project6Image{
+  width: 80%;
+  padding: 3em;
+}
+
+.project1subImage{
+  width: 60%;
+  /* margin-top: 2em; */
+  padding: 1em;
+}
+
+.cardTitleMain{
+  font-family: Mosk800;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+	font-size: 3em;
+}
+.impactText{
+  width: 100%;
+  text-align: right;
+  font-size: 0.5em;
+}
+
+.cardTitleColor1{
+  color: var(--color1);
+}.cardTitleColor2{
+  color: var(--color2);
+}.cardTitleColor3{
+  color: var(--color3);
+}.cardTitleColor4{
+  color: var(--color4);
+}.cardTitleColor5{
+  color: var(--color5);
+}.cardTitleColor6{
+  color: var(--color6);
+}
+
+
+.hoverParent{
+  position:relative;
+}
+
+.hoverContent{
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.cardTextContent{
+  color: var(--color-white);
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 0.8em;
+  margin-top: 0em;
+	font-size: 1.5em;
+}
+
+
+@font-face {
+  font-family: Mosk100;
+  src: url(fonts/Mosk100.ttf);
+}
+@font-face {
+  font-family: Mosk800;
+  src: url(fonts/Mosk800.ttf);
+}
+
+
+@media (max-width: 576px) {
+
+	.categoriesSection{
+		text-align: center;
+	}
+
+}
