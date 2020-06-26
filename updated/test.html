@@ -1,27 +1,238 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Varnit</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="css/test.css">
-
 </head>
+<canvas id="canvas"></canvas>
+<script>
+    // The attributes of the player.
+    var player = {
+        x: 200,    //Initial Spawn Position
+        y: 200,
+        x_v: 0,
+        y_v: 0,
+        jump : true,
+        height: 20,
+        width: 20
+    };
+
+    // The status of the arrow keys
+    var keys = {
+        right: false,
+        left: false,
+        up: false,
+    };
+
+    // The friction and gravity to show realistic movements
+    var gravity = 0.6;
+    var friction = 0.7;
+
+    //Speed and Score
+    var speed = 2;
+    var score=0;
+    var prevPlat = "#fc0";
+
+    // The number of platforms
+    var num = 2;
+    // Has the user pressed space bar yet
+    var isPlaying = false;
+    // The platforms
+    var platforms = [];
+    // Colors of platforms
+    var colors = ["#fc0", "#f36", "#09f", "#f90", "#85f", "#0fa"];
+    colorNum = 0;
+
+    // Function to render the canvas
+    function rendercanvas(){
+        ctx.fillStyle = "#181818";
+        ctx.fillRect(0, 0, 500, 300);
+    }
+
+
+    // Function to render the player
+    function renderplayer(){
+        ctx.fillStyle = "#FFFFFF";
+        ctx.fillRect((player.x)-20, (player.y)-20, player.width, player.height);
+    }
+
+
+    // Function to create platforms
+    function createplat(){
+      platforms.push(
+          {
+          x: 0,
+          y: 200,
+          width: 500,
+          height: 15,
+          color: colors[(colorNum++)%6]
+          }
+      );
+    }
+
+    // Function to render platforms
+    function renderplat(){
+      for(var i=0; i<platforms.length;i++){
+        ctx.fillStyle = platforms[i].color;
+        ctx.fillRect(platforms[i].x, platforms[i].y, platforms[i].width, platforms[i].height);
+      }
+    }
+    function renderplat2(){
+      for(var i=0; i<platforms.length;i++){
+        ctx.fillStyle = platforms[i].color;
+        var x = platforms[i].x;
+        var y = platforms[i].y;
+        var w = platforms[i].width;
+        var h = platforms[i].height;
+        var radius = 4;
+
+        var r = x + w;
+        var b = y + h;
+        ctx.beginPath();
+        ctx.strokeStyle=platforms[i].color;
+        ctx.lineWidth=2;
+        ctx.moveTo(x+radius, y);
+        ctx.lineTo(r-radius, y);
+        ctx.quadraticCurveTo(r, y, r, y+radius);
+        ctx.lineTo(r, y+h-radius);
+        ctx.quadraticCurveTo(r, b, r-radius, b);
+        ctx.lineTo(x+radius, b);
+        ctx.quadraticCurveTo(x, b, x, b-radius);
+        ctx.lineTo(x, y+radius);
+        ctx.quadraticCurveTo(x, y, x+radius, y);
+        ctx.stroke();
+        ctx.fill();
+
+      }
+    }
+
+
+    // This function will be called when a key on the keyboard is pressed
+    function keydown(e) {
+        // 37 is the code for the left arrow key
+        if(e.keyCode == 37) {
+            keys.left = true;
+        }
+        // 37 is the code for the up arrow key
+        if(e.keyCode == 38 || e.keyCode == 32) {
+            if(player.jump == false) {
+                player.y_v = -10;
+            }
+        }
+        // 39 is the code for the right arrow key
+        if(e.keyCode == 39) {
+            keys.right = true;
+        }
+    }
+
+    // This function is called when the pressed key is released
+    function keyup(e) {
+        if(e.keyCode == 37) {
+            keys.left = false;
+        }
+        if(e.keyCode == 38 || e.keyCode == 32) {
+            if(player.y_v < -2) {
+            player.y_v = -3;
+            }
+        }
+        if(e.keyCode == 39) {
+            keys.right = false;
+        }
+    }
+
+    function platformInit(){
+      platforms.push(
+          {
+          x: 600,
+          y: 200,
+          width: 200,
+          height: 15,
+          color: colors[(colorNum++)%6]
+          }
+      );
+    }
+
+    function managePlatforms(){
+      for(var i=0; i<platforms.length;i++){
+        platforms[i].x -= speed;
+        if(platforms[i].x + platforms[i].width < 0){
+          platforms.splice(i,1);
+        }
+      }
+      if (platforms[platforms.length-1].x + platforms[platforms.length-1].width < 500){
+        platformInit();
+      }
+    }
+
+    function loop() {
+
+      managePlatforms();
+
+        // If the player is not jumping apply the effect of frictiom
+        if(player.jump == false) {
+            player.x_v *= friction;
+        } else {
+            // If the player is in the air then apply the effect of gravity
+            player.y_v += gravity;
+        }
+        player.jump = true;
+
+        // If the left key is pressed increase the relevant horizontal velocity
+        if(keys.left) {
+            player.x_v = -2.5;
+        }
+        if(keys.right) {
+            player.x_v = 2.5;
+        }
+
+        // Updating the y and x coordinates of the player
+        player.y += player.y_v;
+        player.x += player.x_v;
+
+        // A simple code that checks for collions with the platform
+        let coli = -1;
+
+        for(var i=0; i<platforms.length;i++){
+          if(platforms[i].x < player.x && player.x < platforms[i].x + platforms[i].width + player.width  &&
+          platforms[i].y < player.y && player.y < platforms[i].y + platforms[i].height){
+              coli = i;
+          }
+        }
+
+        if (coli > -1){
+            player.jump = false;
+            player.y = platforms[coli].y;
+        }
+
+        if (coli!=-1 && platforms[coli].color != prevPlat){
+          prevPlat = platforms[coli].color;
+
+          score++;
+          speed = (score/3)+1;
+          if(speed<2){
+            speed=2;
+          }
+        }
+
+        // Rendering the canvas, the player and the platforms
+        rendercanvas();
+        renderplayer();
+        renderplat2();
+
+        console.log(score);
+    }
+
+    canvas=document.getElementById("canvas");
+    ctx=canvas.getContext("2d");
+    ctx.canvas.height = 300;
+    ctx.canvas.width = 500;
+
+    createplat();
+
+    // Adding the event listeners
+    document.addEventListener("keydown",keydown);
+    document.addEventListener("keyup",keyup);
+
+    setInterval(loop,22);
+
+</script>
 <body>
-
-<div class="container">
-  <span class="txt anim-text-flow">How are you? Bacon ipsum dolor sit amet.</span>
-</div>
-
-<a target="_blank" href="https://www.hendrysadrak.com">@hendrysadrak</a>
-
-  <script src="js/test.js"></script>
-
 </body>
 </html>
-
-
-
