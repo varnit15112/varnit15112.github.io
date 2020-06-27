@@ -27,13 +27,15 @@ var platforms;
 // Colors of platforms
 var colors = ["#fc0", "#f36", "#09f", "#f90", "#85f", "#0fa"];
 colorNum = 0;
+
 var img;
 var img2;
+var imgcount = 0;
 
 //Inititialize Shit
 function inititializeThings(){
   player = {
-      x: 200,    //Initial Spawn Position
+      x: 50,    //Initial Spawn Position
       y: 200,
       x_v: 0,
       y_v: 0,
@@ -59,21 +61,16 @@ function renderScore(){
   ctx.textAlign = "right";
   ctx.fillText("Score: " + score, 300, 30);
 
-  if(gameStatus == -1){
+  if(gameStatus == -1 || gameStatus == 1 ){
     ctx.font = "15px Tahoma";
     ctx.fillStyle = "white";
     ctx.textAlign = "right";
-    ctx.fillText("Press Top Arrow to Start", 300, 60);
+    ctx.fillText("Controls: Up/Tap/Click", 300, 60);
   }
   else if(gameStatus == 0 && score<3){
     ctx.fillStyle = "white";
     ctx.textAlign = "right";
-    ctx.fillText("Controls: Left, Top, Right" , 300, 60);
-  }
-  else if(gameStatus == 1){
-    ctx.fillStyle = "white";
-    ctx.textAlign = "right";
-    ctx.fillText("Press R to Restart" , 300, 60);
+    ctx.fillText("Controls: Up/Tap/Click" , 300, 60);
   }
 
 }
@@ -88,11 +85,11 @@ function rendercanvas(){
     ctx.fillRect(0, 0, 500, 300);
 }
 
-// Function to render the player
-function renderplayer(){
-    ctx.fillStyle = "#FFFFFF";
-    ctx.fillRect((player.x)-20, (player.y)-20, player.width, player.height);
-}
+// // Function to render the player
+// function renderplayer(){
+//     ctx.fillStyle = "#FFFFFF";
+//     ctx.fillRect((player.x)-20, (player.y)-20, player.width, player.height);
+// }
 
 function renderPlayerInit(){
   img = new Image();
@@ -103,11 +100,17 @@ function renderPlayerInit(){
   img2 = new Image();
     img2.onload = function() {
     }
-  img2.src = "ghost.svg";
+  img2.src = "ghost2.svg";
 }
 
 function renderplayer(){
+  // if (imgcount++%2==0){
+  //   ctx.drawImage(img, player.x-28, player.y-40, 40, 40);
+  // }else{
+  //   ctx.drawImage(img2, player.x-28, player.y-40, 40, 40);
+  // }
   ctx.drawImage(img, player.x-28, player.y-40, 40, 40);
+
 }
 
 // Function to create platforms
@@ -115,7 +118,14 @@ function createplat(){
   platforms.push({
       x: 0,
       y: 262,
-      width: 500,
+      width: 300,
+      height: 15,
+      color: colors[(colorNum++)%6]
+  });
+  platforms.push({
+      x: 340,
+      y: 250,
+      width: 200,
       height: 15,
       color: colors[(colorNum++)%6]
   });
@@ -160,11 +170,14 @@ function renderplat2(){
 
 // This function will be called when a key on the keyboard is pressed
 function keydown(e) {
-    // 37 is the code for the left arrow key
-    if(e.keyCode == 37) {
-        keys.left = true;
-    }
     // 37 is the code for the up arrow key
+
+    if(e.keyCode == 38 && gameStatus==1){
+        inititializeThings();
+        isPlaying = true;
+        gameStatus = 0;
+    }
+
     if(e.keyCode == 38){ // || e.keyCode == 32) {
         if(player.jump == false) {
             player.y_v = -10;
@@ -172,17 +185,19 @@ function keydown(e) {
         isPlaying = true;
         gameStatus = 0;
     }
-    // 39 is the code for the right arrow key
-    if(e.keyCode == 39) {
-        keys.right = true;
-    }
+
+    // // 37 is the code for the left arrow key
+    // if(e.keyCode == 37) {
+    //     keys.left = true;
+    // }
+    //
+    // // 39 is the code for the right arrow key
+    // if(e.keyCode == 39) {
+    //     keys.right = true;
+    // }
 
     // 82 is the code for the r
-    if(e.keyCode == 82) {
-        inititializeThings();
-        isPlaying = true;
-        gameStatus = 0;
-    }
+
 }
 
 // This function is called when the pressed key is released
@@ -203,7 +218,7 @@ function keyup(e) {
 function platformInit(){
   platforms.push(
       {
-      x: 550 + Math.floor(Math.random() * 100),
+      x: 520 + Math.floor(Math.random() * 50),
       y: 200 + Math.floor(Math.random() * 80),
       width: 100 + Math.floor(Math.random() * 100),
       height: 15,
@@ -298,6 +313,22 @@ ctx.canvas.height = 300;
 ctx.canvas.width = 350;
 
 inititializeThings();
+
+gameClick = document.getElementById("canvas");
+
+gameClick.onclick = function() {
+  if(gameStatus==1){
+    inititializeThings();
+    isPlaying = true;
+    gameStatus = 0;
+  }else{
+    if(player.jump == false) {
+        player.y_v = -10;
+    }
+    isPlaying = true;
+    gameStatus = 0;
+  }
+};
 
 // Adding the event listeners
 document.addEventListener("keydown",keydown);
