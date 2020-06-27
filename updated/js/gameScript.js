@@ -57,21 +57,18 @@ function inititializeThings(){
 
 function renderScore(){
   // ctx.font="100px";
-  ctx.fillStyle = "white";
+  ctx.fillStyle = prevPlat;
   ctx.textAlign = "right";
-  ctx.fillText("Score: " + score, 300, 30);
 
   if(gameStatus == -1 || gameStatus == 1 ){
     ctx.font = "15px Tahoma";
-    ctx.fillStyle = "white";
-    ctx.textAlign = "right";
-    ctx.fillText("Controls: Up/Tap/Click", 300, 60);
+    ctx.fillText("Up/Tap/Click", 300, 30);
   }
   else if(gameStatus == 0 && score<3){
-    ctx.fillStyle = "white";
-    ctx.textAlign = "right";
-    ctx.fillText("Controls: Up/Tap/Click" , 300, 60);
+    ctx.fillText("Up/Tap/Click" , 300, 30);
   }
+
+  ctx.fillText("Score: " + score, 300, 60);
 
 }
 

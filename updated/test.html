@@ -57,23 +57,20 @@
 
     function renderScore(){
       // ctx.font="100px";
-      ctx.fillStyle = "white";
+      ctx.fillStyle = "rgba(255, 255, 255, 0.2)";
       ctx.textAlign = "right";
       ctx.fillText("Score: " + score, 280, 30);
 
       if(gameStatus == -1){
         ctx.font = "15px Tahoma";
-        ctx.fillStyle = "white";
         ctx.textAlign = "left";
         ctx.fillText("Press Top Arrow to Start" , 20, 280);
       }
       else if(gameStatus == 0){
-        ctx.fillStyle = "white";
         ctx.textAlign = "left";
         ctx.fillText("Controls: Left, Top, Right" , 20, 280);
       }
       else if(gameStatus == 1){
-        ctx.fillStyle = "white";
         ctx.textAlign = "left";
         ctx.fillText("Press R to Restart" , 20, 280);
       }
