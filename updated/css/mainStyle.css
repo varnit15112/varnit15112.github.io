@@ -94,7 +94,7 @@ a, a:hover, a:active, a:visited {
    margin-bottom: 5em;
    border-radius: 10px;
  	 height: 90%;
- }
+}
 
 .project1{
 	border: 5px solid var(--color1);
@@ -120,35 +120,45 @@ a, a:hover, a:active, a:visited {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  /* align-items: flex-end; */
+  /* display: flex; */
+}
+
+.cardImageMain{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* align-items: flex-end; */
+  /* display: flex; */
 }
 
 .project1Image{
   width: 80%;
-  padding: 1em;
+  /* padding: 1em; */
 }
 .project2Image{
   width: 80%;
-  padding: 3em;
+  /* padding: 3em; */
 }
 .project3Image{
   width: 70%;
-  padding: 2em;
+  padding: 1em;
 }
 .project4Image{
   width: 80%;
-  padding: 3em;
+  /* padding: 3em; */
 }
 .project5Image{
   width: 80%;
-  padding: 3em;
+  padding: 1em;
 }
 .project6Image{
   width: 80%;
-  padding: 3em;
+  /* padding: 3em; */
 }
 
 .project1subImage{
-  width: 60%;
+  width: 100%;
   padding: 1em;
 }
 .project2subImage{
@@ -160,7 +170,15 @@ a, a:hover, a:active, a:visited {
   padding: 1em;
 }
 .project4subImage{
-  width: 100%;
+  width: 55%;
+  padding: 1em;
+}
+.project5subImage{
+  width: 90%;
+  padding: 1em;
+}
+.project6subImage{
+  width: 62%;
   padding: 1em;
 }
 
@@ -174,13 +192,22 @@ a, a:hover, a:active, a:visited {
 .impactText{
   position: absolute;
   width: 100%;
+  bottom: 7.5em;
+  right: 2.5em;
+  text-align: right;
+  vertical-align: sub;
+  font-size: 0.5em;
+}
+
+
+/* .impactText{
+  position: absolute;
+  width: 100%;
   bottom: 7em;
   right: 2.5em;
   text-align: right;
-  /* vertical-align: sub; */
-  /* bottom: 0px; */
   font-size: 0.5em;
-}
+} */
 
 .cardTitleColor1{
   color: var(--color1);
@@ -212,6 +239,7 @@ a, a:hover, a:active, a:visited {
   font-family: 'Open Sans', sans-serif;
   margin-left: 0.8em;
   margin-top: 0em;
+  margin-bottom: 1em;
 	font-size: 1.5em;
 }
 
