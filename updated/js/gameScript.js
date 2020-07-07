@@ -62,10 +62,10 @@ function renderScore(){
 
   if(gameStatus == -1 || gameStatus == 1 ){
     ctx.font = "15px Tahoma";
-    ctx.fillText("Up/Tap/Click", 300, 30);
+    ctx.fillText("Boo!", 300, 30);
   }
   else if(gameStatus == 0 && score<3){
-    ctx.fillText("Up/Tap/Click" , 300, 30);
+    ctx.fillText("" , 300, 30);
   }
 
   ctx.fillText("Score: " + score, 300, 60);
@@ -169,13 +169,13 @@ function renderplat2(){
 function keydown(e) {
     // 37 is the code for the up arrow key
 
-    if(e.keyCode == 38 && gameStatus==1){
+    if((e.keyCode == 38 || e.keyCode == 32) && gameStatus==1){
         inititializeThings();
         isPlaying = true;
         gameStatus = 0;
     }
 
-    if(e.keyCode == 38){ // || e.keyCode == 32) {
+    if((e.keyCode == 38 || e.keyCode == 32)){ // || e.keyCode == 32) {
         if(player.jump == false) {
             player.y_v = -10;
         }
@@ -202,7 +202,7 @@ function keyup(e) {
     if(e.keyCode == 37) {
         keys.left = false;
     }
-    if(e.keyCode == 38){ // || e.keyCode == 32) {
+    if((e.keyCode == 38 || e.keyCode == 32)){ // || e.keyCode == 32) {
         if(player.y_v < -2) {
         player.y_v = -3;
         }
@@ -332,3 +332,7 @@ document.addEventListener("keydown",keydown);
 document.addEventListener("keyup",keyup);
 
 setInterval(loop,20);
+
+window.onkeydown = function(e) {
+    return !(e.keyCode == 32);
+};
