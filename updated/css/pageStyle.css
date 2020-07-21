@@ -69,6 +69,14 @@
 }
 
 
+.introTextContent{
+  color: var(--color-white-text);
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+
 .textContent{
   color: var(--color-white-text);
   font-size: 1.1rem;
