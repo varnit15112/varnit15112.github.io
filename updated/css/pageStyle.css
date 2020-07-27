@@ -156,15 +156,15 @@
   font-weight: 400;
 }
 
-
 .contentImageSimple img{
   border-radius: 10px;
   max-width: 90%;
   display: block;
-  margin: 3rem;
+  margin: 4rem;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 .contentImageRow{
   border-radius: 10px;
@@ -190,6 +190,10 @@
   max-width: 35%
 }
 
+.tableSpacing{
+  text-align: center;
+  padding: 4rem !important;
+}
 
 
 @media (max-width: 1200px) {
