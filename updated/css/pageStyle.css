@@ -40,14 +40,6 @@
   padding-top: 5rem;
 }
 
-.rowContent{
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-.rowContent div{
-  padding: 10px;
-}
-
 .headingText{
   font-family: 'Mosk800';
   font-size: 3rem;
@@ -194,6 +186,33 @@
   text-align: center;
   padding: 4rem !important;
 }
+
+.table{
+  width: 90%;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.table thead tr{
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.table tbody tr{
+  color: var(--color-white-text);
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+
+
+
+
+
 
 
 @media (max-width: 1200px) {
