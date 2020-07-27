@@ -157,6 +157,15 @@
   margin-right: auto;
 }
 
+.contentImageSimpleSmaller img{
+  border-radius: 10px;
+  max-width: 60%;
+  display: block;
+  margin: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .contentImageRow{
   border-radius: 10px;
