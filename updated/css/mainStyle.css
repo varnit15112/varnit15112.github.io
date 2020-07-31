@@ -8,6 +8,9 @@
     --space-xl:   calc(3.25 * var(--space-unit));
     --space-xxl:  calc(5.25 * var(--space-unit));
 }*/
+
+@import "hellotextStyle.css";
+
 :root {
   --color1: #fc0;
 	--color2: #f36;
@@ -79,7 +82,9 @@ a, a:hover, a:active, a:visited {
       var(--color6) 85%
     );
 } */
-.selectedCategoryButton{
+
+/* THE IRRITATING COLORS VERSION */
+/* .selectedCategoryButton{
   background-image:
     linear-gradient(
       135deg,
@@ -90,6 +95,19 @@ a, a:hover, a:active, a:visited {
       var(--color5) 68% 85%,
       var(--color6) 85%
     );
+} */
+
+
+.selectedCategoryButton{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 2px solid var(--color-white);
 }
 
 .projectCard{

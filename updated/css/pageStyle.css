@@ -53,7 +53,7 @@
 }
 
 .subheadingSection{
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   color: var(--color-white);
   font-family: 'Roboto', sans-serif;
@@ -166,6 +166,15 @@
   margin-right: auto;
 }
 
+.contentImageSimpleSmaller2 img{
+  border-radius: 10px;
+  max-width: 40%;
+  display: block;
+  margin: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .contentImageRow{
   border-radius: 10px;
@@ -216,10 +225,6 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-
-
-
-
 
 
 
