@@ -114,25 +114,30 @@ a, a:hover, a:active, a:visited {
    margin-bottom: 5em;
    border-radius: 10px;
  	 height: 90%;
+   box-shadow: inset 0px 0px 50px 5px rgba(0,0,0,0.2);
 }
 
 .project1{
-	border: 5px solid var(--color1);
+  border: 1px solid var(--color1);
 }
 .project2{
-	border: 5px solid var(--color2);
+	border: 1px solid var(--color2);
 }
 .project3{
-	border: 5px solid var(--color3); /*#0c8;*/
+	border: 1px solid var(--color3); /*#0c8;*/
 }
 .project4{
-	border: 5px solid var(--color4);
+	border: 1px solid var(--color4);
 }
 .project5{
-	border: 5px solid var(--color5);
+	border: 1px solid var(--color5);
 }
 .project6{
-	border: 5px solid var(--color6);
+	border: 1px solid var(--color6);
+}
+
+.cardSpacing{
+  padding: 2rem !important;
 }
 
 
@@ -212,8 +217,8 @@ a, a:hover, a:active, a:visited {
 .impactText{
   position: absolute;
   width: 100%;
-  bottom: 7.5em;
-  right: 2.5em;
+  bottom: 11em;
+  right: 4em;
   text-align: right;
   vertical-align: sub;
   font-size: 0.5em;
