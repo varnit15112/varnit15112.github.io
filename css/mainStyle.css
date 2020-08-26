@@ -209,9 +209,15 @@ a, a:hover, a:active, a:visited {
 
 .cardIconSmall img{
     margin: 0.5rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0rem;
     width: 7%;
 }
+.cardIconSmall span{
+    margin: 0.4rem;
+    /* margin-bottom: 0.6rem; */
+    width: 7%;
+}
+
 .cardIconSmall2 img{
     margin-right: 0.5rem;
     margin-bottom: -0.3rem;
