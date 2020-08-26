@@ -162,28 +162,28 @@ a, a:hover, a:active, a:visited {
   /* padding: 1em; */
 }
 .project2Image{
-  width: 80%;
+  width: 60%;
   /* padding: 3em; */
 }
 .project3Image{
   width: 70%;
-  padding: 1em;
+  padding: 2em;
 }
 .project4Image{
-  width: 80%;
-  /* padding: 3em; */
+  width: 90%;
+  padding: 2em;
 }
 .project5Image{
-  width: 80%;
-  padding: 1em;
+  width: 70%;
+  padding: 2em;
 }
 .project6Image{
   width: 80%;
-  /* padding: 3em; */
+  padding: 2em;
 }
 
 .project1subImage{
-  width: 100%;
+  width: 95%;
   padding: 1em;
 }
 .project2subImage{
@@ -205,6 +205,30 @@ a, a:hover, a:active, a:visited {
 .project6subImage{
   width: 62%;
   padding: 1em;
+}
+
+.cardIconSmall img{
+    margin: 0.5rem;
+    width: 7%;
+}
+.cardIconSmall2 img{
+    margin-right: 0.5rem;
+    margin-bottom: -0.2rem;
+    width: 10%;
+}
+.cardIconSmall3 img{
+    margin: 0.3rem;
+    width: 7%;
+}
+.cardIconSmall4 img{
+    margin-right: 0.5rem;
+    margin-bottom: 0.2rem;
+    width: 8%;
+}
+.cardIconSmall5 img{
+    margin-right: 0.5rem;
+    margin-bottom: -1rem;
+    width: 14%;
 }
 
 .cardTitleMain{
