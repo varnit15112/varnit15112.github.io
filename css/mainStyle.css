@@ -209,11 +209,12 @@ a, a:hover, a:active, a:visited {
 
 .cardIconSmall img{
     margin: 0.5rem;
+    margin-bottom: 0.6rem;
     width: 7%;
 }
 .cardIconSmall2 img{
     margin-right: 0.5rem;
-    margin-bottom: -0.2rem;
+    margin-bottom: -0.3rem;
     width: 10%;
 }
 .cardIconSmall3 img{
@@ -222,13 +223,18 @@ a, a:hover, a:active, a:visited {
 }
 .cardIconSmall4 img{
     margin-right: 0.5rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
     width: 8%;
 }
 .cardIconSmall5 img{
     margin-right: 0.5rem;
     margin-bottom: -1rem;
     width: 14%;
+}
+.cardIconSmall6 img{
+    margin: 0.5rem;
+    margin-bottom: 0.8rem;
+    width: 7%;
 }
 
 .cardTitleMain{
