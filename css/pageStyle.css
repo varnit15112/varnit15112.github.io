@@ -192,6 +192,14 @@
   margin-left: auto;
   margin-right: auto;
 }
+.contentImageSimpleSmaller2 img{
+  border-radius: 10px;
+  width: 40%;
+  display: block;
+  margin: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .contentVideo{
   border-radius: 10px;

@@ -51,8 +51,8 @@
           </span>
           <br>
           <span class="introTextContent">
-            Selected for presentation in
-            the Maker Fair 2016
+            Finalist in the Delhi
+            Maker Fair 2016
           </span>
         </div>
 
@@ -62,8 +62,7 @@
           </span>
           <br>
           <span class="introTextContent">
-            Built and prototyped the physical prototype <br>
-            Assisted in user research
+            Physical Prototyping, UX Research
           </span>
         </div>
 
@@ -143,7 +142,165 @@
 
     <div class="line"></div>
 
+    <div class="headingSection color6">
+      Research
+    </div>
+
+    <div class="textContent">
+
+      In spring 2016, I took a course called "Introduction to Engineering Design".
+      For the course project, we wanted to make a prototype of a braille printer.
+      <span class="color6"> At that point, I was not aware of the term "User Research,"
+      yet I understood
+      that to solve a problem, we needed to talk to the users. </span> So we decided to visit
+      a school for the visually challenged to understand the following:
+      <ul>
+        <li> The working of a braille printer
+        <li> The use cases for faculty/students
+        <li> Specific Pain Points
+        </ul>
+    </div>
+
+
+    <div class="contentImageSimpleSmaller">
+      <img src="../images/braille/research.jpeg">
+    </div>
+
+    <div class="textContent">
+
+      We spoke to teachers and students in various learning stages to understand
+      how they interacted with the printer and how we could help.
+      <span class="color6"> There were two primary interest areas - low cost
+          and accessibility. </span>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="headingSection color6">
+      Circuit Design
+    </div>
+
+    <div class="textContent">
+        We knew that we needed to make a 3 Axis CNC for the braille printer.
+        We decided to use servo motors for precision and power and decided
+        to use H-bridges to control them via an Arduino. Here is our
+        final circuit diagram:
+    </div>
+
+
+    <div class="contentImageSimpleSmaller">
+      <img src="../images/braille/circuit.jpg">
+    </div>
+
+    <div class="line"></div>
+
+    <div class="headingSection color6">
+      Hacking
+    </div>
+
+    <div class="textContent">
+      We wanted to keep the cost of the project to a minimum because
+      the low cost was an important research finding and we
+      weren't assigned any budget for the project. Hence,
+       <span class="color6"> we went dumpster diving in a nearby electronics market.
+      We went shop to shop and asked for discarded and broken
+      CPUs, Laptops, PlayStations, etc. We wanted to use the small
+      servo motors found inside the CD/DVD tray for our 3 Axis CNC. </span>
+      We were able to find three motors from the following electronics:
+        <ul>
+            <li> a broken laptop
+            <li> a discarded CPU
+            <li> an old VCR player
+        </ul>
+    </div>
+
+
+    <div class="row" style="justify-content:center">
+
+      <div class="col-md-4">
+        <div class="contentImageSimple">
+          <img src="../images/braille/h1.jpg">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="contentImageSimple">
+          <img src="../images/braille/h2.jpg">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="contentImageSimple">
+          <img src="../images/braille/h3.jpg">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="line"></div>
+
+    <div class="headingSection color6">
+      Proof of Concept
+    </div>
+
+    <div class="textContent">
+      Here is a proof of concept where all three servos are seen
+      working independently with commands from the serial input of an Arduino.
+    </div>
+
+    <video class="contentVideo" controls autoplay muted>
+      <source src="../images/braille/proof.mp4" type="video/mp4">
+    </video>
+
+    <div class="line"></div>
+
+    <div class="headingSection color6">
+      Prototype
+    </div>
+
+    <div class="textContent">
+      The following video shows the final working 3 Axis CNC -
+      a machine that can be used to control an object (the braille
+      printing tip) along the X, Y, and Z-axis simultaneously.
+      </span>
+    </div>
+
+    <video class="contentVideo" controls autoplay muted>
+      <source src="../images/braille/working_video.mp4" type="video/mp4">
+    </video>
+
+    <div class="textContent">
+      To make the printer accessible, we allowed users to print braille using
+      commands via Bluetooth. <span class="color6"> The picture below shows the final
+      prototype used to print braille via smartphones. </span>
+      </span>
+    </div>
+
+
+    <div class="contentImageSimpleSmaller">
+      <img src="../images/braille/final_proto.jpg">
+    </div>
+
+
+    <div class="line"></div>
+
+    <div class="contactSection color6">
+      If you would like to know more about this project,
+      reach out to me at <a href="mailto:varnit@gatech.edu"> [varnit@gatech.edu] </a> or
+      <a href="https://www.linkedin.com/in/varnitjain/" target="_blank"> [LinkedIn] </a> .
+    </div>
+
+    <div class="line"></div>
+
+
   </div>
+
+  <style>
+    a, a:hover, a:active, a:visited {
+      color: var(--color6);
+      text-decoration: none;
+    }
+  </style>
 
 
   <script src="../js/mainScript.js"></script>
