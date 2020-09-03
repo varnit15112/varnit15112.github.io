@@ -280,7 +280,6 @@ a, a:hover, a:active, a:visited {
   text-decoration: none;
 }
 
-
 @media (max-width: 1200px) {
 	.textImage{
 		font-size: 2.5rem;

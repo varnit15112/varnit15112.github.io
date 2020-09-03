@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="../css/stackedCards.css">
   <link rel="stylesheet" type="text/css" href="../css/mainStyle.css">
   <link rel="stylesheet" type="text/css" href="../css/pageStyle.css">
 
@@ -38,7 +39,7 @@
         <div class="textImage">
           <!-- A scalable and modular toolkit for enabling
           physical manipulation in VR -->
-          Augmenting NCR's Kiosks to be accessible to wheelchair users
+          Making NCR's Kiosks accessible for wheelchair users
         </div>
       </div>
 
@@ -50,8 +51,7 @@
           </span>
           <br>
           <span class="introTextContent">
-            Design guidelines given to NCR
-            for their next update of the Kiosks
+            Design guidelines for the next update of the NCR Kiosks
           </span>
         </div>
 
@@ -61,8 +61,7 @@
           </span>
           <br>
           <span class="introTextContent">
-            Conducted user research to finalize the design
-            direction and performed usability tests on the prototype.
+            UX Research
           </span>
         </div>
 
@@ -150,14 +149,451 @@
 
     <div class="line"></div>
 
-  </div>
+    <div class="headingSection color3">
+      Context
+    </div>
+
+    <div class="textContent">
+        The NCR Corporation, previously known as National Cash Register,
+        is a leading kiosk manufacturer whose products include
+        different kinds of self service-kiosks, such as the XK32,
+        the SK47, the SS75, and the SelfServ 90.
+    </div>
 
 
-  <script src="../js/mainScript.js"></script>
+    <div class="textQuote">
+        However, these Kiosk systems are not
+        usable by a variety of users due to both
+        hardware and software accessibility issues.<br>
+    </div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script?
 
-  </body>
-  </html>
+    <div class="textContent">
+        <span class="color3">At the same time, NCR has not been oblivious of
+        accessibility and has implemented
+        a uNav interaction panel to its food-ordering
+        kiosk model- the XK32. It includes an audio
+        jack (voice instructions) and a 5-button keypad. </span>
+
+    </div>
+
+
+    <div class="contentImageSimpleSmaller col-md-8" style="margin-left: auto; margin-right: auto;">
+      <img src="../images/ncr/uNavVector.png">
+    </div>
+
+    <div class="line"></div>
+
+    <div class="headingSection color3">
+      Research
+    </div>
+
+    <div class="subheadingSection">
+      1. Literature Review
+    </div>
+
+    <div class="textContent">
+        Since neither of us had any prior experience working with
+        Kiosks, the first step in our research process was to go
+        through existing literature. <span class="color3"> While there is an ever-growing
+        field of research to suggest best practices for accessibility
+        within digital design, we found out that there seems to be
+        a lesser focus on integrating accessibility into kiosks. </span>
+        We sourced, reviewed, and synthesized several research
+        papers that either touch on kiosk accessibility or associated
+        applicable field. Some of the key takeaways were:
+        <ul>
+            <li> A lot of research papers focus on mechanical
+                adjustments to cater to different height requirements.
+                Due to implementation and cost restrictions, we will
+                not focus on that. However, <span class="color3">  the idea of a
+                    system that
+                adapts or transforms based on user needs is promising. </span>
+            <li> There are many accessibility quantifiers which
+                give an overall accessibility score, but there
+                are few articles that suggest best practices.
+            <li> <span class="color3"> Observation and task analysis are powerful
+                tools </span> - they help in not only understanding the
+                existing system but also give insight into the
+                user's thought process.
+        </ul>
+
+    </div>
+
+    <div class="subheadingSection">
+      2. Task Analysis
+    </div>
+
+    <div class="textContent">
+        To better understand how users interact with the current system,
+        we decided to observe users interacting with the kiosk at peak
+        usage - the lunch hour. Our goal with observation was mostly
+        exploratory, but with some research objectives. <span class="color3">
+        We intended to
+        build a task heirarchy of the existing system and determine if
+        users experienced any usability issues with the ordering process. </span>
+        Additionally, we wanted to know how a novice user interacts with
+        the system compared to a user that has been familiar with the
+        system for some time to determine learnability.
+    </div>
+
+    <div class="row">
+        <div class="contentImageSimple col-sm-3">
+          <img src="../images/ncr/observe/o1.jpg">
+        </div>
+        <div class="contentImageSimple col-sm-3">
+          <img src="../images/ncr/observe/o2.jpg">
+        </div>
+        <div class="contentImageSimple col-sm-3">
+          <img src="../images/ncr/observe/o3.jpg">
+        </div>
+        <div class="contentImageSimple col-sm-3">
+          <img src="../images/ncr/observe/o4.jpg">
+        </div>
+    </div>
+
+    <div class="contentImageSimple">
+      <a href="https://drive.google.com/file/d/1Ar6XWlQ0JoCVwiHcFfSmwPooKsbGXKQq/view" target="_blank">
+          <img src="../images/ncr/taskAnalysis.png">
+      </a>
+    </div>
+
+
+    <div class="subheadingSection">
+      3. Semi-Structure Interview
+    </div>
+
+
+    <div class="textContent">
+        Since we were dealing with a vulnerable population, we had
+        access to a select people for in-person studies. We wanted
+        to use surveys to gather information about user needs and
+        pain points. However, <span class="color3"> before creating a survey without much
+        domain knowledge, we decided to conduct a semi-structured
+        interview as our first research method
+        to understand the problem space better. </span>
+
+        We were able to contact someone who advocates rights for
+        people with physical disabilities across Atlanta. <span class="color3"> Our main
+        information goal from this research method was to weed
+        out obvious questions and get in-depth knowledge about
+        the community's perception of Kiosks. We also wanted to
+        know more about the technologies they found helpful in public spaces. </span>
+    </div>
+
+
+    <div class="contentImageSimpleSmaller">
+      <img src="../images/ncr/interview.JPG"  style="margin-bottom: 0px;">
+    </div>
+
+    <div class="row">
+        <div class="contentImageSimple col-sm-4">
+          <img src="../images/ncr/notes1.jpeg">
+        </div>
+
+        <div class="contentImageSimple col-sm-4">
+          <img src="../images/ncr/notes2.jpeg">
+        </div>
+
+        <div class="contentImageSimple col-sm-4">
+          <img src="../images/ncr/notes3.jpeg">
+        </div>
+    </div>
+
+
+
+    <div class="subheadingSection">
+      4. Survey
+    </div>
+
+
+    <div class="textContent">
+        We chose an online survey as a research method to
+        collect data primarily because of its ability to collect
+        data from a large set of users in a short time. <span class="color3"> We wanted
+        to learn what users with disabilities like and dislike about
+        a point of sale kiosk. We wanted to know how users’ disabilities
+        hinder specific interactions with a kiosk. </span> Based on our
+        previous research methods, another goal for us was to learn
+        about common frustrations at each stage of the process of
+        completing checkout. We also wanted to determine if certain
+        users prefer tactile interaction versus touch screen and for
+        completing what tasks.
+    </div>
+
+
+    <div class="container-fixed stacked-cards stacked-cards-slide">
+		<ul>
+			<li style="background-color: #fff;">
+                <img src="../images/ncr/survey/1.png">
+			</li>
+			<li style="background-color: #fff;">
+                <img src="../images/ncr/survey/2.png">
+			</li>
+			<li style="background-color: #fff;">
+                <img src="../images/ncr/survey/3.png">
+			</li>
+			<!-- <li style="background-color: #fff;">
+                <img src="../images/ncr/survey/4.png">
+			</li>
+			<li style="background-color: #fff;">
+                <img src="../images/ncr/survey/5.png">
+			</li> -->
+			<li style="background-color: #fff;">
+                <img src="../images/ncr/survey/6.png">
+			</li>
+            <li style="background-color: #fff;">
+                <img src="../images/ncr/survey/7.png">
+			</li>
+            <li style="background-color: #fff;">
+                <img src="../images/ncr/survey/8.png">
+			</li>
+            <li style="background-color: #fff;">
+                <img src="../images/ncr/survey/9.png">
+			</li>
+            <li style="background-color: #fff;">
+                <img src="../images/ncr/survey/10.png">
+			</li>
+		</ul>
+  	</div>
+
+    <div class="subheadingSection">
+    </div>
+
+    <div class="line"></div>
+
+    <div class="headingSection color3">
+      Analysis
+    </div>
+
+    <div class="subheadingSection">
+      1. Personas and Empathy Maps
+    </div>
+
+    <div class="textContent">
+        After going through our data, we felt the need
+        to develop personas to refer back to understand
+        the user's needs and motivations. <span class="color3"> The personality
+        types, preferences, and frustrations were all
+        informed insights from our interview and survey
+        results, which were generalized to form a cohesive
+        persona. </span> We created empathy maps for both our
+        personas to further elaborate our understanding.
+    </div>
+
+
+    <div class="row">
+        <div class="contentImageSimple col-md-6">
+          <img src="../images/ncr/persona1.png" style="margin-bottom: 0px;">
+        </div>
+        <div class="contentImageSimple col-md-6">
+          <img src="../images/ncr/persona2.png" style="margin-bottom: 0px;">
+        </div>
+        <div class="contentImageSimple col-md-6">
+          <img src="../images/ncr/emap1.png">
+        </div>
+        <div class="contentImageSimple col-md-6">
+          <img src="../images/ncr/emap2.png">
+        </div>
+    </div>
+
+
+    <div class="subheadingSection">
+      3. Affinity Map
+    </div>
+
+    <div class="textContent">
+        After collecting all the data from the observations,
+        the semi-structured interview, and the survey results,
+        we aggregated it in the form of an affinity map.
+        We were able to distill the information user needs
+        and design opportunities. We were also able to find
+        recurring feedback that could be grouped into common themes.
+    </div>
+
+    <div class="contentImageSimple">
+      <img src="../images/ncr/affinity.png">
+    </div>
+
+    <div class="textContent">
+        From the task analysis, observation study,
+        interview, and survey, we had a general idea
+        of where users were likely to experience problems.
+        A few of the most straight-forward problems, and
+        likely the most easily remedied, were:<br><br>
+        <ul>
+            <li>Users did not notice that alternate methods of
+                interacting with the kiosk were available
+            </li>
+            <li>Users did not notice that there were more
+                options to certain menu items due to the scroll
+                bar being too light in contrast compared to the background.
+            </li>
+            <li>Certain areas of the screen are
+                challenging for users with physical
+                impairments to reach or see from where they are seated.
+            </li>
+            <li>Users became frustrated with the
+                slow movement and interaction controls of the uNav device.
+            </li>
+            <li>Users were often unaware of how to add an
+                item to cart before checkout
+            </li>
+            <li>Users want to remain independent, and not made to feel “special"
+            </li>
+            <li>Action feedback is important
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="line"></div>
+
+    <div class="headingSection color3">
+      Design
+    </div>
+
+    <div class="textContent">
+        We started designing our solution by brainstorming
+        different design concepts with users’ limitations,
+        needs, and design implications we analyzed from previous
+        research. We did this through an informed brainstorm
+        session where we generated ideas relevant to user
+        needs and pain points. <br>
+        We explored kiosk features across a range of design
+        considerations, ranging from Universal Design to
+        User-Group Specific Design to User-Specific Design.
+    </div>
+
+
+    <div class="contentImageSimple">
+      <img src="../images/ncr/concept-range.png">
+    </div>
+
+
+    <div class="subheadingSection">
+      1. Design Concepts
+    </div>
+
+    <div class="textContent">
+        <span class="color3"> We finalized various features and ideas from
+        brainstorm session into three abstract design
+        concepts that covers different ranges of potential
+        users of kiosks mentioned above. </span> Sketches and
+        descriptions were created for each concepts for
+        assessment by experts and users for feedback.
+    </div>
+
+
+    <div class="row">
+        <div class="contentImageSimple col-md-4">
+          <img src="../images/ncr/concept1.png">
+        </div>
+        <div class="contentImageSimple col-md-4">
+          <img src="../images/ncr/concept2.png">
+        </div>
+        <div class="contentImageSimple col-md-4">
+          <img src="../images/ncr/concept3.png">
+        </div>
+    </div>
+
+
+    <div class="textContent">
+        After fully defining our concepts and developing
+        sketches to represent them, we began developing our
+        first feedback session. At this point, we wanted to
+        present our concepts at a relatively low fidelity to
+        allow for feedback with original and creative ideas
+        for improvement. The goal of this feedback session
+        was to <span class="color3"> provide usability experts with a broad
+        understanding of the three concepts we created
+        to obtain feedback on the idea as a whole, and
+        for certain features within the idea. </span>
+
+        For each concept we wanted to understand the following: <br><br>
+        <ul>
+            <li>The value each feature adds to the overall design</li>
+            <li>Preferences for specific features within the concept and why</li>
+            <li>Potential changes or improvements that may strengthen the concept</li>
+        </ul>
+
+        <span class="color3"> After speaking with usability experts from NCR,
+        we decided to pursue concept 2 (uNav Compatibility Mode)
+        as a basis, and incorporate features from other concepts. </span>
+        From a user’s perspective, concept 2 most significantly
+        addresses the accessibility issues presented during the
+        initial observation. From a stakeholder’s perspective, the
+        proposed concept is a companion to the already existing
+        uNav control and will be considered as an evolution
+        of the existing system.
+
+
+
+
+    </div>
+
+
+
+
+
+    <div class="subheadingSection">
+      2. Wireframes
+    </div>
+
+
+    <div class="line"></div>
+
+    <div class="headingSection color3">
+      Usability Testing
+    </div>
+
+
+    <div class="subheadingSection">
+      1. Heuristic Evaluation
+    </div>
+
+
+    <div class="subheadingSection">
+      2. Think Aloud Sessions
+    </div>
+
+    <div class="line"></div>
+
+    <div class="contactSection color3">
+      If you would like to know more about this project,
+      reach out to me at <a href="mailto:varnit@gatech.edu"> [varnit@gatech.edu] </a> or
+      <a href="https://www.linkedin.com/in/varnitjain/" target="_blank"> [LinkedIn] </a> .
+    </div>
+
+    <div class="line"></div>
+
+
+    <!-- END CONTAINER -->
+    </div>
+
+    <style>
+      a, a:hover, a:active, a:visited {
+        color: var(--color3);
+        text-decoration: none;
+      }
+    </style>
+
+    <script src="../js/stackedCards.min.js"></script>
+    <script src="../js/mainScript.js"></script>
+
+    <script>
+  		var stackedCardSlide = new stackedCards({
+  		 	selector: '.stacked-cards-slide',
+  		 	layout: "slide",
+  		 	transformOrigin: "center",
+  		 });
+
+  		stackedCardSlide.init();
+  	</script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script?
+
+</body>
+</html>
