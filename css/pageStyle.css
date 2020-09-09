@@ -132,6 +132,12 @@
   font-weight: 600;
 }
 
+.nsf_image_top img{
+    width: 10rem;
+    margin: 1rem;
+    float: right;
+}
+
 .nsf_image img{
     width: 40%;
     display: block;
