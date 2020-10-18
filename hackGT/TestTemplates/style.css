@@ -1,0 +1,61 @@
+body {
+    margin: 50px;
+}
+
+.new-frame {
+    position: relative;
+    display: inline-block;
+}
+
+.tool-tip {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 30px solid #0A0A0A;
+    position: absolute;
+    top: 34px;
+    left: -25px;
+}
+
+iframe {
+    width: 370px;
+    height: 577px;
+    display: inline;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cancel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.cancel:focus,
+.cancel:active {
+    outline: none;
+    border: none;
+}
+
+.button-no-style {
+    background: none;
+    border: none;
+}
+
+.button-no-style:focus,
+.button-no-style:active {
+    outline: none;
+    border: none;
+}
+
+.cancel svg {
+    width: 12px;
+    height: 12px;
+}
+
+.cancel svg path {
+    fill: #fff;
+}

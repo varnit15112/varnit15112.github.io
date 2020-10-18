@@ -1,0 +1,283 @@
+/* ======= Presets =======  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000;
+    /* margin: 50px;
+    padding: 50px; */
+}
+
+.text-opacity {
+    color: #ffffff6f;
+}
+
+
+/* ======= !Presets =======  */
+
+
+/* ======= Category =======  */
+
+.twitter-frame {
+    position: relative;
+    width: 370px;
+    height: 577px;
+    overflow: hidden;
+    background: #0A0A0A;
+    border-radius: 10px;
+    padding: 33px 18px 33px;
+}
+
+.views {
+    display: flex;
+    height: 100%;
+}
+
+.views>div {
+    margin-right: 48px;
+}
+
+.moveleft {
+    transform: translateX(-370px);
+    transition: all 0.4s ease-in-out;
+}
+
+
+/* ======= Screen View =======  */
+
+.edit-view {
+    flex-shrink: 0;
+    width: 330px;
+}
+
+.success-view {
+    flex-shrink: 0;
+    width: 318px;
+}
+
+
+/* ======= Hashtag Selection =======  */
+
+.bootstrap-select {
+    width: auto;
+}
+
+.dropdown button {
+    margin-bottom: 28px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.dropdown button .filter-option {
+    max-width: 296px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown-menu li .text {
+    min-width: 150px;
+    max-width: 281px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 4px 0;
+}
+
+.dropdown button:hover {
+    background: #ffffff2f;
+    color: #fff;
+}
+
+.bootstrap-select .dropdown-toggle:focus,
+.bootstrap-select .dropdown-toggle:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.bootstrap-select>.dropdown-toggle:after {
+    margin-top: 2px;
+    margin-left: 8px;
+    border-top: 0.25em solid;
+    border-right: .25em solid transparent;
+    border-bottom: 0;
+    border-left: .25em solid transparent;
+}
+
+
+/* ======= !Hashtag Selction =======  */
+
+.button-no-style {
+    background: none;
+    border: none;
+}
+
+.button-no-style:focus,
+.button-no-style:active {
+    outline: none;
+    border: none;
+}
+
+
+/* ======= !Screen View =======  */
+
+
+/* ======= Edit View =======  */
+
+h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    margin-top: 6px;
+}
+
+.description {
+    margin-right: 30px;
+    margin-bottom: 32px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.form-group input {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 8px;
+    color: #fff;
+}
+
+.form-group input::placeholder {
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.form-group input:active,
+.form-group input:focus {
+    border-color: #fff;
+    background: transparent;
+    color: #fff;
+}
+
+.form-control:not(:placeholder-shown) {
+    border-color: #fff;
+    background: transparent;
+    color: #fff;
+}
+
+.form-group .dropdown {
+    display: block;
+}
+
+.form-group .dropdown button {
+    margin-bottom: 0;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.form-group .bootstrap-select .dropdown-toggle:focus,
+.form-group .bootstrap-select .dropdown-toggle:active {
+    border: 2px solid #fff;
+    outline: none;
+    box-shadow: none;
+    border-radius: 4px;
+}
+
+.form-action {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 45px 0 0;
+}
+
+.form-action button {
+    border-radius: 2px;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.submit-now {
+    background: #1DA1F2;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-now:hover {
+    background-color: #0472da;
+    color: rgb(221, 221, 221);
+}
+
+.cancel-button {
+    border: none;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.cancel-button:hover {
+    color: #fff;
+}
+
+.cancel-button:active,
+.cancel-button:focus {
+    outline: none;
+}
+
+
+/* ======= !Edit View =======  */
+
+
+/* ======= !Category =======  */
+
+
+/* ======= Media Queries =======  */
+
+@media (min-width: 1520px) {}
+
+@media (max-width: 1600px) {}
+
+
+/* ======= !Media Queries =======  *

@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Page-->
+    <title></title>
+    <!---->
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!---->
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!---->
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!---->
+</head>
+
+<body>
+    <div class="twitter-frame">
+        <div class="views">
+            <div class="screen-view">
+                <select id="tag-selector" onchange="onTagChange()" class="selectpicker" data-width="fit">
+                    <!-- <option value="#tag1">#tag1</option>
+                    <option value="#tag2">#tag2</option>
+                    <option value="#tag3">#tag3</option>
+                    <option value="#tag4">#tag4</option>
+                    <option value="#tag5">#tag5</option> -->
+                </select>
+
+                <li style="display:none;" class="singleLinkElement">
+                    <a href="" class="singleLinkURL" target="_blank">
+                        <svg viewBox="0 0 13 12" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.56389 10.7404L7.19743 8.37367L7.84829 7.72294L8.24494 8.11946C8.34681 8.22133 8.48025 8.27233 8.61381 8.27233C8.74737 8.27233 8.88094 8.22133 8.98281 8.11946C9.18655 7.91572 9.18655 7.58533 8.98281 7.38159L8.58616 6.98494L9.23728 6.33408L11.6037 8.70054L9.56389 10.7404ZM4.48949 5.66586L2.12302 3.29926L4.16288 1.25954L6.52935 3.626L5.87822 4.27713L5.4817 3.88061C5.27796 3.67687 4.94757 3.67687 4.74384 3.88061C4.5401 4.08448 4.5401 4.41474 4.74384 4.61847L5.14036 5.01499L4.48949 5.66586ZM12.7105 8.33167L9.60615 5.22721C9.40254 5.0236 9.07215 5.0236 8.86828 5.22721L7.84829 6.2472L6.61608 5.01499L7.63607 3.995C7.83981 3.79113 7.83981 3.46087 7.63607 3.25713L4.53187 0.152804C4.32826 -0.0509345 3.99787 -0.0509345 3.79413 0.152804L1.01615 2.93027C0.918324 3.02809 0.863281 3.16087 0.863281 3.29926C0.863281 3.43765 0.918324 3.57031 1.01615 3.66826L4.12061 6.77259C4.22248 6.87446 4.35591 6.92546 4.48948 6.92546C4.62304 6.92546 4.75661 6.87446 4.85848 6.77259L5.87821 5.75286L7.11042 6.98507L6.09069 8.0048C5.88695 8.20854 5.88695 8.53893 6.09069 8.74267L9.19489 11.8471C9.29271 11.945 9.4255 12 9.56389 12C9.70228 12 9.83493 11.945 9.93288 11.8471L12.7105 9.06954C12.9142 8.86567 12.9142 8.53541 12.7105 8.33167Z"
+                                fill="#0A0A0A" />
+                        </svg>
+                        <span class="singleLinkTitle">Text 1</span>
+                    </a>
+                </li>
+                <!-- <div class="related">related</div> -->
+
+                <!-- Accordion -->
+                <ul id="accordion" class="accordion">
+                    <li class="donate" style="display:none;">
+                        <div class="link">
+                            <svg viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="19.5" cy="19.4999" r="18.537" fill="#196440" />
+                                <path
+                                    d="M18.398 29.9488H19.9126L19.9207 28.1361C23.3287 27.8863 25.2784 25.9366 25.2784 23.3262C25.2784 20.3533 22.6277 19.2012 20.533 18.6856L19.9449 18.5325L19.961 13.3601C21.4676 13.5615 22.4988 14.3994 22.6519 15.7207H25.0528C24.9883 13.2635 22.9581 11.4265 19.969 11.1848L19.9771 9.32373H18.4624L18.4544 11.2009C15.562 11.491 13.4431 13.2957 13.4431 15.898C13.4431 18.1941 15.0867 19.5396 17.7373 20.2567L18.4302 20.442L18.4141 25.9286C16.843 25.7352 15.6265 24.8812 15.4976 23.3262H13C13.1531 26.1058 15.1592 27.8944 18.406 28.1361L18.398 29.9488ZM19.9287 25.9286L19.9449 20.8609C21.5804 21.3121 22.813 21.9083 22.813 23.3021C22.813 24.712 21.6368 25.703 19.9287 25.9286ZM18.4383 18.1297C17.2378 17.7752 15.9165 17.1387 15.9246 15.753C15.9246 14.5445 16.8833 13.6018 18.4463 13.3682L18.4383 18.1297Z"
+                                    fill="#71FFBB" />
+                            </svg> Donate
+                            <i class="fa fa-chevron-down"></i></div>
+                        <ul class="submenu">
+
+                        </ul>
+                    </li>
+                    <li class="volunteer" style="display:none;">
+                        <div class="link">
+                            <svg viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="39"
+                                    height="39">
+                                    <circle cx="19.5" cy="19.5" r="18.537" fill="#966D1A" />
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <circle cx="19.5" cy="19.5" r="18.537" fill="#192964" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M23.0567 20.642C22.7403 20.5405 22.3943 20.6102 22.1414 20.8254L20.0596 22.5957L17.978 20.8254C17.725 20.6102 17.3791 20.5405 17.0627 20.642C15.7163 21.0714 9 23.3828 9 26.7149C9 27.246 9.5 27.5 9.9617 27.6766L20 32.5L30.1574 27.6766C30.5 27.5 31.1191 27.246 31.1191 26.7149C31.1191 23.3828 24.4028 21.0714 23.0567 20.642ZM20.0595 20.0056C23.6291 20.0056 26.5332 17.0882 26.5332 13.5023C26.5332 9.91684 23.6291 7 20.0595 7C16.4902 7 13.5861 9.91684 13.5861 13.5023C13.5861 17.0882 16.4902 20.0056 20.0595 20.0056Z"
+                                        fill="#7188FF" />
+                                </g>
+                            </svg> Volunteer
+                            <i class="fa fa-chevron-down"></i></div>
+                        <ul class="submenu">
+
+                        </ul>
+                    </li>
+                    <li class="petitions" style="display:none;">
+                        <div class="link">
+                            <svg viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="19.5" cy="19.5" r="18.537" fill="#644219" />
+                                <path
+                                    d="M27.1367 9H14.3856C14.2069 9 14.0356 9.07102 13.9092 9.19739L11.3868 11.7197C11.2605 11.8461 11.1895 12.0175 11.1895 12.1962V31.3262C11.1895 31.6983 11.4911 32 11.8633 32H27.1367C27.5089 32 27.8105 31.6983 27.8105 31.3262V9.67383C27.8105 9.3017 27.5089 9 27.1367 9ZM18.1523 24.7227H14.5586C14.1865 24.7227 13.8848 24.421 13.8848 24.0488C13.8848 23.6767 14.1865 23.375 14.5586 23.375H18.1523C18.5245 23.375 18.8262 23.6767 18.8262 24.0488C18.8262 24.421 18.5245 24.7227 18.1523 24.7227ZM24.7973 27.7189C24.3672 27.9865 23.8587 28.0701 23.3653 27.9545C23.0142 27.8722 22.701 27.6959 22.4536 27.4456L21.734 28.9255C21.5721 29.2586 21.1696 29.4004 20.8334 29.2369C20.4987 29.0741 20.3593 28.6709 20.522 28.3362L21.7519 25.8067C21.9837 25.3299 22.6523 25.2959 22.931 25.747L23.3336 26.3983C23.4924 26.6551 23.829 26.7341 24.0854 26.5746C24.4015 26.378 24.817 26.4749 25.0135 26.7909C25.2101 27.1068 25.1133 27.5224 24.7973 27.7189ZM24.4414 22.0273H14.5586C14.1865 22.0273 13.8848 21.7256 13.8848 21.3535C13.8848 20.9814 14.1865 20.6797 14.5586 20.6797H24.4414C24.8135 20.6797 25.1152 20.9814 25.1152 21.3535C25.1152 21.7256 24.8135 22.0273 24.4414 22.0273ZM24.4414 19.332H14.5586C14.1865 19.332 13.8848 19.0303 13.8848 18.6582C13.8848 18.2861 14.1865 17.9844 14.5586 17.9844H24.4414C24.8135 17.9844 25.1152 18.2861 25.1152 18.6582C25.1152 19.0303 24.8135 19.332 24.4414 19.332ZM25.1152 15.9629C25.1152 16.335 24.8135 16.6367 24.4414 16.6367H20.8477C20.4755 16.6367 20.1738 16.335 20.1738 15.9629V12.3691C20.1738 11.997 20.4755 11.6953 20.8477 11.6953H24.4414C24.8135 11.6953 25.1152 11.997 25.1152 12.3691V15.9629Z"
+                                    fill="#FFB571" />
+                            </svg> Petitions
+                            <i class="fa fa-chevron-down"></i></div>
+                        <ul class="submenu">
+
+                        </ul>
+                    </li>
+                    <li class="events" style="display:none;">
+                        <div class="link">
+                            <svg viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="19.5" cy="19.5" r="18.537" fill="#641919" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M19.5003 13.4315C17.2393 13.4315 15.3997 15.3002 15.3997 17.5973C15.3997 19.8944 17.2393 21.7631 19.5003 21.7631C21.7615 21.7631 23.6014 19.8944 23.6014 17.5973C23.6014 15.3002 21.7615 13.4315 19.5003 13.4315ZM25.2823 11.0446C23.8028 9.72636 21.7492 9 19.5 9C17.2508 9 15.1972 9.72636 13.7177 11.0446C11.9396 12.6292 11 15.0378 11 18.0105C11 24.4855 18.4514 32.0726 18.7685 32.3923C18.9619 32.5875 19.2254 32.697 19.5 32.697C19.7746 32.697 20.0381 32.5875 20.2315 32.3923C20.5486 32.0726 28 24.4855 28 18.0105C28 15.0378 27.0604 12.6292 25.2823 11.0446Z"
+                                    fill="#F96060" />
+                            </svg> Events
+                            <i class="fa fa-chevron-down"></i></div>
+                        <ul class="submenu">
+
+                        </ul>
+                    </li>
+                    <li class="learn-more" style="display:none;">
+                        <div class="link">
+                            <svg viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="19.5" cy="19.5" r="18.537" fill="#966D1A" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M23.3408 14.6251C23.3408 14.1418 22.949 13.7501 22.4658 13.7501H16.4658C15.9825 13.7501 15.5908 14.1418 15.5908 14.6251V18.1251C15.5908 18.6083 15.9825 19.0001 16.4658 19.0001H22.4658C22.949 19.0001 23.3408 18.6083 23.3408 18.1251V14.6251ZM15.5965 21.8751C15.5965 21.3918 15.9882 21.0001 16.4715 21.0001H22.4225C22.9058 21.0001 23.2975 21.3918 23.2975 21.8751C23.2975 22.3583 22.9058 22.7501 22.4225 22.7501H16.4715C15.9882 22.7501 15.5965 22.3583 15.5965 21.8751ZM15.5965 25.375C15.5965 24.8918 15.9882 24.5 16.4715 24.5H22.4225C22.9058 24.5 23.2975 24.8918 23.2975 25.375C23.2975 25.8583 22.9058 26.25 22.4225 26.25H16.4715C15.9882 26.25 15.5965 25.8583 15.5965 25.375ZM27.0909 9H12.0908C11.5386 9 11.0908 9.44775 11.0908 10V30.0001C11.0908 30.5523 11.5386 31.0001 12.0908 31.0001H27.0909C27.6431 31.0001 28.0909 30.5523 28.0909 30.0001V10C28.0909 9.44775 27.6431 9 27.0909 9Z"
+                                    fill="#FFD071" />
+                            </svg> Learn More<i class="fa fa-chevron-down"></i></div>
+                        <ul class="submenu">
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Submit Link -->
+                <p class="request-submit"><span class="text-opacity">Have a link to add to this list? </span><button class="submit-it button-no-style">Submit it</button><span class="text-opacity"> to us!</span>
+                </p>
+            </div>
+
+            <div class="edit-view">
+                <h1>Help others act!</h1>
+                <p class="text-opacity description">By adding links to our database, you help others take initative on issues that matter most.</p>
+                <form id="form" action="">
+                    <div class="form-group">
+                        <label for="category-selector">PICK A CATEGORY</label>
+                        <select id="category-selector" onchange="oncategorychange()" class="selectpicker" data-width="fit">
+                            <option value="donate">Donate</option>
+                            <option value="volunteer">Volunteer</option>
+                            <option value="petition">Petitions</option>
+                            <option value="event">Events</option>
+                            <option value="learn-more">Learn More</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">TITLE</label>
+                        <input type="title" class="form-control" id="title" placeholder="Eg: Equal Justice Initiative" name="link">
+                    </div>
+                    <div class="form-group">
+                        <label for="link ">LINK</label>
+                        <input type="link " class="form-control " id="link" placeholder="Paste Link Here " name="link ">
+                    </div>
+                    <div class="form-group">
+                        <label for="hashtag">HASHTAGS (SEPARATED BY SPACES)</label>
+                        <input type="hashtag" class="form-control " id="hashtag" placeholder="Eg: #BlackLivesMatter, #BLM" name="hashtag">
+                    </div>
+                    <div class="form-action">
+                        <button type="button" class="cancel-button text-opacity">Cancel</button>
+                        <button type="submit" class="btn btn-default submit-now">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="success-view">
+                <h1>Success!</h1>
+                <p class="text-opacity description">Your submitted resource was successfully added to our database!</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Javascript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js "></script>
+    <script src="assets/js/firebase.js "></script>
+    <script src="assets/js/manageFirebase.js "></script>
+    <script src="assets/js/main.js "></script>
+    <!---->
+</body>
+
+</html>
