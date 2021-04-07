@@ -1,40 +1,3 @@
-.color1{
-  color: var(--color1);
-}
-.color2{
-  color: var(--color2);
-}
-.color3{
-  color: var(--color3);
-}
-.color4{
-  color: var(--color4);
-}
-.color5{
-  color: var(--color5);
-}
-.color6 {
-  color: var(--color6);
-}
-
-.bcolor1{
-  background-color: var(--color1);
-}
-.bcolor2{
-  background-color: var(--color2);
-}
-.bcolor3{
-  background-color: var(--color3);
-}
-.bcolor4{
-  background-color: var(--color4);
-}
-.bcolor5{
-  background-color: var(--color5);
-}
-.bcolor6 {
-  background-color: var(--color6);
-}
 
 .topSection{
   padding-top: 5rem;
@@ -301,4 +264,46 @@ a, a:hover, a:active, a:visited {
 }
 @media (max-width: 576px) {
 
+}
+
+.color1{
+  color: var(--color1);
+}
+.color2{
+  color: var(--color2);
+}
+.color3{
+  color: var(--color3);
+}
+.color4{
+  color: var(--color4);
+}
+.color5{
+  color: var(--color5);
+}
+.color6 {
+  color: var(--color6);
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+.bcolor1{
+  background-color: var(--color1);
+}
+.bcolor2{
+  background-color: var(--color2);
+}
+.bcolor3{
+  background-color: var(--color3);
+}
+.bcolor4{
+  background-color: var(--color4);
+}
+.bcolor5{
+  background-color: var(--color5);
+}
+.bcolor6 {
+  background-color: var(--color6);
 }
