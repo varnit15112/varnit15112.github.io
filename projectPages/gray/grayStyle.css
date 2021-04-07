@@ -18,12 +18,15 @@ svg {
 .grayControlButtons{
     display: block;
     flex-shrink: 0;
+    margin: 25px;
 }
 
 .grayControlIndividual{
     color: var(--color-white);
     display: block;
-    padding: 20px;
+    width: max-content;
+    cursor: pointer;
+    margin-bottom: 30px;
 }
 
 
