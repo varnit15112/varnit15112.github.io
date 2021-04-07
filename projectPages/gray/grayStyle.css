@@ -1,0 +1,43 @@
+svg { 
+    border: 1px solid #ffffffff;
+    border-radius: 3px;
+    width: 800px;
+    height: 600px;
+    margin: 20px;
+    flex-shrink: 0;
+}
+
+.tldrSection{
+    display: flex;
+}
+
+.graySVG{
+    padding-bottom: 2rem;
+}
+
+.grayControlButtons{
+    display: block;
+    flex-shrink: 0;
+}
+
+.grayControlIndividual{
+    color: var(--color-white);
+    display: block;
+    padding: 20px;
+}
+
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 15px;
+	height: 15px;
+    margin-left: 5px;
+    padding: 1px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
