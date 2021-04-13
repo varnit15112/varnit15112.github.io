@@ -44,3 +44,24 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="color"]::-webkit-color-swatch {
 	border: none;
 }
+
+
+.horizontal{
+    background-color: #555;
+    position: absolute;
+    left: 0px;
+    height: 0.5px;
+    width: 100%;
+}
+
+.vertical{
+    background-color: #555;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 0.5px;
+}
+
+.helpBox{
+    visibility: hidden;
+}
