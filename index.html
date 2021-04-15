@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Varnit</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" type="text/css" href="css/navbarStyle.css">
   <link rel="stylesheet" type="text/css" href="css/mainStyle.css">
 
 </head>
+
 <body>
 
   <!-- <div class="page">
@@ -52,219 +59,227 @@
 </div>
 </div> -->
 
-<div class="container">
+  <div class="container">
 
-  <div class="helloSection" id="gameClick">
-    <div class="row">
-      <div class="col-xl-8 helloText">
-        <div>
-          Hi, I'm Varnit. </br>
-          I create
-          <span class="txt anim-text-flow">Experiences!</span>
-          <!-- <span class="wonderText">experiences</span>. -->
+    <div class="helloSection" id="gameClick">
+      <div class="row">
+        <div class="col-xl-8 helloText">
+          <div>
+            Hi, I'm Varnit. </br>
+            I create
+            <span class="txt anim-text-flow">Experiences!</span>
+            <!-- <span class="wonderText">experiences</span>. -->
+          </div>
+        </div>
+
+        <div class="col-xl-4">
+          <canvas id="canvas"></canvas>
         </div>
       </div>
-
-      <div class="col-xl-4">
-        <canvas id="canvas"></canvas>
-      </div>
     </div>
-  </div>
 
-  <div class="categoriesSection">
+    <div class="categoriesSection">
 
-    <a href="#!" onclick="allDisplay(this)">
-      <span class="categoryButton selectedCategoryButton">All</span>
-    </a>
-    <a href="#!" onclick="UXDisplay(this)">
-      <span class="categoryButton">UX</span>
-    </a>
-    <a href="#!" onclick="SoftwareDisplay(this)">
-      <span class="categoryButton">Software</span>
-    </a>
-    <a href="#!" onclick="HardwareDisplay(this)">
-      <span class="categoryButton">Hardware</span>
-    </a>
+      <a href="#!" onclick="allDisplay(this)">
+        <span class="categoryButton selectedCategoryButton">All</span>
+      </a>
+      <a href="#!" onclick="UXDisplay(this)">
+        <span class="categoryButton">UX</span>
+      </a>
+      <a href="#!" onclick="SoftwareDisplay(this)">
+        <span class="categoryButton">Software</span>
+      </a>
+      <a href="#!" onclick="HardwareDisplay(this)">
+        <span class="categoryButton">Hardware</span>
+      </a>
 
-  </div>
+    </div>
 
-  <div class="projectsSection">
+    <div class="projectsSection">
 
-    <div class="row">
+      <div class="row">
 
-      <div class="col-12 col-lg-6 cardSpacing" id="cardPECSS">
-        <a href="projectPages/pecss.html">
-          <div class="projectCard project1" onmouseover="hoverEnter(this)" onmouseout="hoverExit(this)">
-            <span class="cardTitleMain cardTitleColor1"> PECSS </span>
-            <div class = "hoverParent">
-              <div class = "initialImage">
-                <div class="cardTextContent">
-                  A platform to administer and visualize patient's progress during PTSD therapy
+        <div class="col-12 col-lg-6 cardSpacing" id="cardPECSS">
+          <a href="projects/pecss.html">
+            <div class="projectCard project1" onmouseover="hoverEnter(this)" onmouseout="hoverExit(this)">
+              <span class="cardTitleMain cardTitleColor1"> PECSS </span>
+              <div class="hoverParent">
+                <div class="initialImage">
+                  <div class="cardTextContent">
+                    A platform to administer and visualize patient's progress during PTSD therapy
+                  </div>
+                  <img class="cardImageMain project1Image" src="coverImages/pecss.png" />
                 </div>
-                <img class="cardImageMain project1Image" src="coverImages/pecss.png"/>
-              </div>
-              <div class = "hoverContent" style=" opacity: 0;">
-                <img class="cardImageMain project1subImage" src="coverImages/alt/pecss.png"/>
-              </div>
-            </div>
-            <div class="impactText">
-              <!-- <span class="cardTitleMain cardTitleColor1" align="right" width="100%"> Master's Thesis </span> -->
-              <div class="cardIconSmall">
-                <img src="coverImages/projectIcons/pecss.png"><br>
-                <span class="cardTitleColor1"> #1915504 </span>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-
-
-      <div class="col-12 col-lg-6 cardSpacing" id="cardVirtual">
-        <a href="projectPages/virtual.html">
-          <div class="projectCard project2" onmouseover="hoverEnter(this)" onmouseout="hoverExit(this)">
-            <span class="cardTitleMain cardTitleColor2"> VIRTUAL BRICKS </span>
-            <div class = "hoverParent">
-              <div class = "initialImage">
-                <div class="cardTextContent">
-                  A toolkit for developers to build custom VR controllers with features like rotation, translation, and stretch
+                <div class="hoverContent" style=" opacity: 0;">
+                  <img class="cardImageMain project1subImage" src="coverImages/alt/pecss.png" />
                 </div>
-                <img class="cardImageMain project2Image" src="coverImages/virtual.png" />
               </div>
-              <div class = "hoverContent" style=" opacity: 0;">
-                <img class="cardImageMain project1subImage" src="coverImages/alt/virtual2.png"/>
-              </div>
-            </div>
-            <div class="impactText">
-              <!-- <span class="cardTitleMain cardTitleColor2" align="right" width="100%"> CHI '19 </span> -->
-              <div class="cardIconSmall2">
-                <img src="coverImages/projectIcons/virtual.png">
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-
-
-      <div class="col-12 col-lg-6 cardSpacing" id="cardNCR">
-        <a href="projectPages/ncr.html">
-          <div class="projectCard project3" onmouseover="hoverEnter(this)" onmouseout="hoverExit(this)">
-            <span class="cardTitleMain cardTitleColor3"> NCR </span>
-            <div class = "hoverParent">
-              <div class = "initialImage">
-                <div class="cardTextContent">
-                  Making NCR's Kiosks accessible for wheelchair users
+              <div class="impactText">
+                <!-- <span class="cardTitleMain cardTitleColor1" align="right" width="100%"> Master's Thesis </span> -->
+                <div class="cardIconSmall">
+                  <img src="coverImages/projectIcons/pecss.png"><br>
+                  <span class="cardTitleColor1"> #1915504 </span>
                 </div>
-                <img class="cardImageMain project3Image" src="coverImages/ncr.png" />
-              </div>
-              <div class = "hoverContent" style=" opacity: 0;">
-                <img class="cardImageMain project3subImage" src="coverImages/alt/ncr.png"/>
               </div>
             </div>
-            <div class="impactText">
-              <!-- <span class="cardTitleMain cardTitleColor3"> Collaboration </span> -->
-              <div class="cardIconSmall4">
-                <img src="coverImages/projectIcons/ncr.png">
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
+          </a>
+        </div>
 
-      <div class="col-12 col-lg-6 cardSpacing" id="cardLameBot">
-        <a href="projectPages/lamebot.html">
-          <div class="projectCard project4" onmouseover="hoverEnter(this)" onmouseout="hoverExit(this)">
-            <span class="cardTitleMain cardTitleColor4"> LAMEBOT </span>
-            <div class = "hoverParent">
-              <div class = "initialImage">
-                <div class="cardTextContent">
-                  A chatbot that tries to mimic my speech patterns
+
+
+        <div class="col-12 col-lg-6 cardSpacing" id="cardVirtual">
+          <a href="projects/virtual.html">
+            <div class="projectCard project2" onmouseover="hoverEnter(this)" onmouseout="hoverExit(this)">
+              <span class="cardTitleMain cardTitleColor2"> VIRTUAL BRICKS </span>
+              <div class="hoverParent">
+                <div class="initialImage">
+                  <div class="cardTextContent">
+                    A toolkit for developers to build custom VR controllers with features like rotation, translation,
+                    and stretch
+                  </div>
+                  <img class="cardImageMain project2Image" src="coverImages/virtual.png" />
                 </div>
-                <img class="cardImageMain project4Image" src="coverImages/lamebot.png" />
-              </div>
-              <div class = "hoverContent" style=" opacity: 0;">
-                <img class="cardImageMain project4subImage" src="coverImages/alt/lamebot.png"/>
-              </div>
-            </div>
-            <div class="impactText">
-              <!-- <span class="cardTitleMain cardTitleColor4"> Demo Inside </span> -->
-              <div class="cardIconSmall6">
-                <img src="coverImages/projectIcons/lame.png">
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-
-      <div class="col-12 col-lg-6 cardSpacing" id="cardMime">
-        <a href="projectPages/mime.html">
-          <div class="projectCard project5" onmouseover="hoverEnter(this)" onmouseout="hoverExit(this)">
-            <span class="cardTitleMain cardTitleColor5"> MIME </span>
-            <div class = "hoverParent">
-              <div class = "initialImage">
-                <div class="cardTextContent">
-                  A platform where user can create and share
-                  memes, and connect with fellow meme enthusiasts
+                <div class="hoverContent" style=" opacity: 0;">
+                  <img class="cardImageMain project1subImage" src="coverImages/alt/virtual2.png" />
                 </div>
-                <img class="cardImageMain project5Image" src="coverImages/mime.png" />
               </div>
-              <div class = "hoverContent" style=" opacity: 0;">
-                <img class="cardImageMain project5subImage" src="coverImages/alt/mime.png"/>
-              </div>
-            </div>
-            <div class="impactText">
-              <!-- <span class="cardTitleMain cardTitleColor5"> Android Play Store </span> -->
-              <div class="cardIconSmall3">
-                <img src="coverImages/projectIcons/mime.png">
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-12 col-lg-6 cardSpacing" id="cardBrailleIO">
-        <a href="projectPages/braille.html">
-          <div class="projectCard project6" onmouseover="hoverEnter(this)" onmouseout="hoverExit(this)">
-            <span class="cardTitleMain cardTitleColor6"> BRAILLE IO </span>
-            <div class = "hoverParent">
-              <div class = "initialImage">
-                <div class="cardTextContent">
-                  A prototype of a Braille printer
-                  made using old CD/DVD drives
+              <div class="impactText">
+                <!-- <span class="cardTitleMain cardTitleColor2" align="right" width="100%"> CHI '19 </span> -->
+                <div class="cardIconSmall2">
+                  <img src="coverImages/projectIcons/virtual.png">
                 </div>
-                <img class="cardImageMain project6Image" src="coverImages/braille.png" />
-              </div>
-              <div class = "hoverContent" style=" opacity: 0;">
-                <img class="cardImageMain project6subImage" src="coverImages/alt/braille.png"/>
               </div>
             </div>
-            <div class="impactText">
-              <!-- <span class="cardTitleMain cardTitleColor6"> Maker Fair '16 </span> -->
-              <div class="cardIconSmall5">
-                <img src="coverImages/projectIcons/braille.png">
+          </a>
+        </div>
+
+
+
+        <div class="col-12 col-lg-6 cardSpacing" id="cardNCR">
+          <a href="projects/ncr.html">
+            <div class="projectCard project3" onmouseover="hoverEnter(this)" onmouseout="hoverExit(this)">
+              <span class="cardTitleMain cardTitleColor3"> NCR </span>
+              <div class="hoverParent">
+                <div class="initialImage">
+                  <div class="cardTextContent">
+                    Making NCR's Kiosks accessible for wheelchair users
+                  </div>
+                  <img class="cardImageMain project3Image" src="coverImages/ncr.png" />
+                </div>
+                <div class="hoverContent" style=" opacity: 0;">
+                  <img class="cardImageMain project3subImage" src="coverImages/alt/ncr.png" />
+                </div>
+              </div>
+              <div class="impactText">
+                <!-- <span class="cardTitleMain cardTitleColor3"> Collaboration </span> -->
+                <div class="cardIconSmall4">
+                  <img src="coverImages/projectIcons/ncr.png">
+                </div>
               </div>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
+
+        <div class="col-12 col-lg-6 cardSpacing" id="cardLameBot">
+          <a href="projects/lamebot.html">
+            <div class="projectCard project4" onmouseover="hoverEnter(this)" onmouseout="hoverExit(this)">
+              <span class="cardTitleMain cardTitleColor4"> LAMEBOT </span>
+              <div class="hoverParent">
+                <div class="initialImage">
+                  <div class="cardTextContent">
+                    A chatbot that tries to mimic my speech patterns
+                  </div>
+                  <img class="cardImageMain project4Image" src="coverImages/lamebot.png" />
+                </div>
+                <div class="hoverContent" style=" opacity: 0;">
+                  <img class="cardImageMain project4subImage" src="coverImages/alt/lamebot.png" />
+                </div>
+              </div>
+              <div class="impactText">
+                <!-- <span class="cardTitleMain cardTitleColor4"> Demo Inside </span> -->
+                <div class="cardIconSmall6">
+                  <img src="coverImages/projectIcons/lame.png">
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="col-12 col-lg-6 cardSpacing" id="cardMime">
+          <a href="projects/mime.html">
+            <div class="projectCard project5" onmouseover="hoverEnter(this)" onmouseout="hoverExit(this)">
+              <span class="cardTitleMain cardTitleColor5"> MIME </span>
+              <div class="hoverParent">
+                <div class="initialImage">
+                  <div class="cardTextContent">
+                    A platform where user can create and share
+                    memes, and connect with fellow meme enthusiasts
+                  </div>
+                  <img class="cardImageMain project5Image" src="coverImages/mime.png" />
+                </div>
+                <div class="hoverContent" style=" opacity: 0;">
+                  <img class="cardImageMain project5subImage" src="coverImages/alt/mime.png" />
+                </div>
+              </div>
+              <div class="impactText">
+                <!-- <span class="cardTitleMain cardTitleColor5"> Android Play Store </span> -->
+                <div class="cardIconSmall3">
+                  <img src="coverImages/projectIcons/mime.png">
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-lg-6 cardSpacing" id="cardBrailleIO">
+          <a href="projects/braille.html">
+            <div class="projectCard project6" onmouseover="hoverEnter(this)" onmouseout="hoverExit(this)">
+              <span class="cardTitleMain cardTitleColor6"> BRAILLE IO </span>
+              <div class="hoverParent">
+                <div class="initialImage">
+                  <div class="cardTextContent">
+                    A prototype of a Braille printer
+                    made using old CD/DVD drives
+                  </div>
+                  <img class="cardImageMain project6Image" src="coverImages/braille.png" />
+                </div>
+                <div class="hoverContent" style=" opacity: 0;">
+                  <img class="cardImageMain project6subImage" src="coverImages/alt/braille.png" />
+                </div>
+              </div>
+              <div class="impactText">
+                <!-- <span class="cardTitleMain cardTitleColor6"> Maker Fair '16 </span> -->
+                <div class="cardIconSmall5">
+                  <img src="coverImages/projectIcons/braille.png">
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
       </div>
 
     </div>
 
+
   </div>
 
 
-</div>
+  <script src="js/navbarScript.js"></script>
+  <script src="js/mainScript.js"></script>
+  <script src="js/gameScript.js" charset="utf-8"></script>
 
-
-<script src="js/navbarScript.js"></script>
-<script src="js/mainScript.js"></script>
-<script src="js/gameScript.js" charset="utf-8"></script>
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
